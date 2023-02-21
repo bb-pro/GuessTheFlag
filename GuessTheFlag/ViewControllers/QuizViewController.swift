@@ -32,7 +32,7 @@ final class QuizViewController: UIViewController {
                 scoreLabel.text = "\(scoreCount)"
                 sender.backgroundColor = .green
             } else {
-                sender.backgroundColor = .red
+                
             }
         }
         

@@ -47,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="283.25581395348837" y="0.64377682403433478"/>
         </scene>
-        <!--выйти-->
+        <!--Угадай Флаг-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,15 +96,15 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNR-ks-W7a">
-                                <rect key="frame" x="403.66666666666669" y="175" width="10.333333333333314" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="399" y="175" width="15" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc2-Hd-xwV">
-                                <rect key="frame" x="339.33333333333331" y="175" width="44.333333333333314" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баллы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc2-Hd-xwV">
+                                <rect key="frame" x="303" y="175" width="76" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -125,7 +125,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JOB-F1-LqB" secondAttribute="trailing" constant="20" id="y8S-dt-nat"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="выйти" id="89g-PN-y23"/>
+                    <navigationItem key="navigationItem" title="Угадай Флаг" id="89g-PN-y23"/>
                     <connections>
                         <outlet property="flagImage" destination="Yxt-Qo-Log" id="Gvz-v7-Te4"/>
                         <outlet property="scoreLabel" destination="xNR-ks-W7a" id="SQI-nk-iMz"/>
