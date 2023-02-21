@@ -11,12 +11,14 @@ final class QuizViewController: UIViewController {
     @IBOutlet var flagImage: UIImageView!
     @IBOutlet var flagButtons: [UIButton]!
     @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var hearts: [UIImageView]!
     
     
     private let flags = FlagManager.parseJson()
     var flag: String!
     var userChoice: String!
     var scoreCount = 0
+    var heartCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         flagButtons.forEach { button in
@@ -25,12 +27,16 @@ final class QuizViewController: UIViewController {
         updateUI()
     }
     
-   
+    
     
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
+        
+        
         checkAnswer(sender)
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        
+        
         
     }
     
@@ -61,12 +67,20 @@ private extension QuizViewController {
     }
     
     func checkAnswer(_ sender: UIButton) {
+        
         if let buttonTitle = sender.title(for: .selected) {
             if buttonTitle == flag {
                 scoreCount += 1
                 scoreLabel.text = "\(scoreCount)"
                 sender.backgroundColor = .green
             } else {
+                if heartCount < 2 {
+                    hearts[heartCount].isHidden = true
+                    heartCount += 1
+                } else {
+                    showAlert(title: "Проиграно", message: "Ваши баллы: \(scoreCount)")
+                }
+                
                 sender.backgroundColor = .red
                 flagButtons.forEach { button in
                     if button.title(for: .normal) == flag {
@@ -76,5 +90,12 @@ private extension QuizViewController {
             }
         }
     }
-    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.dismiss(animated: true)
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
