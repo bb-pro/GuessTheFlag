@@ -20,7 +20,7 @@ final class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         flagButtons.forEach { button in
-            button.layer.cornerRadius = 25
+            button.layer.cornerRadius = 20
         }
         updateUI()
     }
@@ -35,7 +35,8 @@ final class QuizViewController: UIViewController {
                 sender.backgroundColor = .red
             }
         }
-        updateUI()
+        
+        Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         
     }
     
@@ -46,7 +47,7 @@ final class QuizViewController: UIViewController {
 //MARK: - Private Methods
 private extension QuizViewController {
     
-    func updateUI() {
+    @objc func updateUI() {
         
         var answers: [String: String] = [:]
         for (button, answer) in zip(flagButtons, flags.shuffled()) {
