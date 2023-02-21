@@ -27,21 +27,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="AnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0NX-mn-bJ2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cV-kk-lOW">
                                         <rect key="frame" x="0.0" y="54.333333333333314" width="390" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="AnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0jo-op-Spg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-2m-ov1">
                                         <rect key="frame" x="0.0" y="108.66666666666663" width="390" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="AnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUc-IR-Bhi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX7-dA-qn0">
                                         <rect key="frame" x="0.0" y="163" width="390" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="AnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrm-Yh-J01"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -77,6 +89,11 @@
                     </view>
                     <connections>
                         <outlet property="flagImage" destination="Yxt-Qo-Log" id="Gvz-v7-Te4"/>
+                        <outlet property="scoreLabel" destination="xNR-ks-W7a" id="SQI-nk-iMz"/>
+                        <outletCollection property="flagButtons" destination="m6m-Cz-w4g" collectionClass="NSMutableArray" id="z4P-u6-gCe"/>
+                        <outletCollection property="flagButtons" destination="2cV-kk-lOW" collectionClass="NSMutableArray" id="34j-hS-bG9"/>
+                        <outletCollection property="flagButtons" destination="abD-2m-ov1" collectionClass="NSMutableArray" id="cPD-gf-RUe"/>
+                        <outletCollection property="flagButtons" destination="pX7-dA-qn0" collectionClass="NSMutableArray" id="XYi-g7-3yZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
