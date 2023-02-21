@@ -12,19 +12,30 @@ final class QuizViewController: UIViewController {
     @IBOutlet var flagButtons: [UIButton]!
     @IBOutlet var scoreLabel: UILabel!
     
-    private var countryName: String!
-    private let flags = FlagManager.parseJson()
-    private var scoreCount = 0
     
+    private let flags = FlagManager.parseJson()
+    var flag: String!
+    var userChoice: String!
+    var scoreCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        flagButtons.forEach { button in
+            button.layer.cornerRadius = 25
+        }
+        updateUI()
     }
     
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
-        checkAnswer(sender: sender)
-        updateUI(with: sender)
-        
-        print(" user's choice \(sender.currentTitle)")
+        if let buttonTitle = sender.title(for: .selected) {
+            if buttonTitle == flag {
+                scoreCount += 1
+                scoreLabel.text = "\(scoreCount)"
+                sender.backgroundColor = .green
+            } else {
+                sender.backgroundColor = .red
+            }
+        }
+        updateUI()
         
     }
     
@@ -34,38 +45,24 @@ final class QuizViewController: UIViewController {
 
 //MARK: - Private Methods
 private extension QuizViewController {
-    func updateUI(with sender: UIButton) {
-        let number = Int.random(in: 0...100)
-        flagImage.image = UIImage(named: flags[number].code.lowercased())
-        countryName = String(flags[number].country)
+    
+    func updateUI() {
         
-        updateButtonTitles(answer: countryName, with: flags)
-        checkAnswer(sender: sender)
+        var answers: [String: String] = [:]
+        for (button, answer) in zip(flagButtons, flags.shuffled()) {
+            button.setTitle(answer.key, for: .normal)
+            answers[answer.key] = answer.value
+        }
+        
+        if let correctAnswer = answers.randomElement() {
+            flag = correctAnswer.key
+            flagImage.image = UIImage(named: correctAnswer.value.lowercased())
+            
+        }
+        
+        flagButtons.forEach { button in
+            button.backgroundColor = .white
+        }
     }
     
-    func updateButtonTitles(answer: String, with options: [Flag]) {
-        var answerOptions = [answer]
-        
-        for _ in 1...3 {
-            if let country = options.randomElement()?.country {
-                answerOptions.append(country)
-            }
-            
-            
-        }
-        
-        let answers = Set(answerOptions)
-        for (button, answer) in zip(flagButtons, answers) {
-            button.setTitle(answer, for: .normal)
-        }
-    }
-    func checkAnswer(sender: UIButton) {
-        guard let countryTitle = sender.currentTitle else { return }
-        if countryTitle == countryName {
-            scoreCount += 1
-            scoreLabel.text = String(scoreCount)
-        }
-    }
 }
-
-

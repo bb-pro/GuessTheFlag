@@ -16,8 +16,8 @@ struct Country:Decodable {
 
 struct FlagManager {
     
-    static func parseJson() -> [Flag] {
-        var countryDict: [Flag] = []
+    static func parseJson() -> [String: String] {
+        var countryDict: [String: String] = [:]
         if let path = Bundle.main.path(forResource: "data", ofType: "json"){
             
             
@@ -28,10 +28,8 @@ struct FlagManager {
                 // countries is an array of Country structs, where each Country has a code and name property
                 
                 for country in countries {
-                    countryDict.append(Flag(country: country.Name, code: country.Code))
-                    
+                    countryDict[country.Name] = country.Code
                 }
-                
             } catch {
                 print("Error: \(error)")
             }
