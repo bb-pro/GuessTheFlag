@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */; };
 		80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */; };
-		80F7E7B729A48D1300D3CE19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B629A48D1300D3CE19 /* ViewController.swift */; };
+		80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */; };
 		80F7E7BA29A48D1300D3CE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F7E7B829A48D1300D3CE19 /* Main.storyboard */; };
 		80F7E7BC29A48D1500D3CE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F7E7BB29A48D1500D3CE19 /* Assets.xcassets */; };
 		80F7E7BF29A48D1500D3CE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F7E7BD29A48D1500D3CE19 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80F7E7B629A48D1300D3CE19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		80F7E7B929A48D1300D3CE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80F7E7BB29A48D1500D3CE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80F7E7BE29A48D1500D3CE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		80F7E7B129A48D1300D3CE19 /* GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
-				80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */,
-				80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */,
-				80F7E7B629A48D1300D3CE19 /* ViewController.swift */,
-				80F7E7B829A48D1300D3CE19 /* Main.storyboard */,
+				80F7E7C629A48D4D00D3CE19 /* App */,
+				80F7E7C729A48DD100D3CE19 /* ViewControllers */,
+				80F7E7C829A48DDF00D3CE19 /* Storyboards */,
 				80F7E7BB29A48D1500D3CE19 /* Assets.xcassets */,
-				80F7E7BD29A48D1500D3CE19 /* LaunchScreen.storyboard */,
-				80F7E7C029A48D1500D3CE19 /* Info.plist */,
 			);
 			path = GuessTheFlag;
+			sourceTree = "<group>";
+		};
+		80F7E7C629A48D4D00D3CE19 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */,
+				80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */,
+				80F7E7C029A48D1500D3CE19 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80F7E7C729A48DD100D3CE19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80F7E7C829A48DDF00D3CE19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				80F7E7B829A48D1300D3CE19 /* Main.storyboard */,
+				80F7E7BD29A48D1500D3CE19 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F7E7B729A48D1300D3CE19 /* ViewController.swift in Sources */,
+				80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */,
 				80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */,
 				80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +313,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuessTheFlag/Info.plist;
+				INFOPLIST_FILE = GuessTheFlag/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +327,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.bektemur.GuessTheFlag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +345,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuessTheFlag/Info.plist;
+				INFOPLIST_FILE = GuessTheFlag/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.bektemur.GuessTheFlag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
