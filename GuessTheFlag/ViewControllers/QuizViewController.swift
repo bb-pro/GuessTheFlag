@@ -20,23 +20,17 @@ final class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         flagButtons.forEach { button in
-            button.layer.cornerRadius = 20
+            button.layer.cornerRadius = 10
         }
         updateUI()
     }
     
+   
+    
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
-        if let buttonTitle = sender.title(for: .selected) {
-            if buttonTitle == flag {
-                scoreCount += 1
-                scoreLabel.text = "\(scoreCount)"
-                sender.backgroundColor = .green
-            } else {
-                
-            }
-        }
+        checkAnswer(sender)
         
-        Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
         
     }
     
@@ -63,6 +57,23 @@ private extension QuizViewController {
         
         flagButtons.forEach { button in
             button.backgroundColor = .white
+        }
+    }
+    
+    func checkAnswer(_ sender: UIButton) {
+        if let buttonTitle = sender.title(for: .selected) {
+            if buttonTitle == flag {
+                scoreCount += 1
+                scoreLabel.text = "\(scoreCount)"
+                sender.backgroundColor = .green
+            } else {
+                sender.backgroundColor = .red
+                flagButtons.forEach { button in
+                    if button.title(for: .normal) == flag {
+                        button.backgroundColor = .green
+                    }
+                }
+            }
         }
     }
     
