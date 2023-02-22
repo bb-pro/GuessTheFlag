@@ -39,6 +39,9 @@ final class QuizViewController: UIViewController {
         
         
     }
+    @IBAction func goBack() {
+        dismiss(animated: true)
+    }
     
 }
 

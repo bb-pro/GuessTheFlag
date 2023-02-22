@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801EB44029A5CFDD00645EEA /* NavigationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */; };
 		80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */; };
 		80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */; };
 		80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreenViewController.swift; sourceTree = "<group>"; };
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */,
+				801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */,
 				80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */,
 				80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */,
+				801EB44029A5CFDD00645EEA /* NavigationScreenViewController.swift in Sources */,
 				80F7E7CD29A49AC300D3CE19 /* Flag Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
