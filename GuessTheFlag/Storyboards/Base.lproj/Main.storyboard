@@ -99,27 +99,27 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-ag-Y8m">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="97.666666666666671"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Азия" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="globe.central.south.asia.fill" catalog="system" title="Азия" cornerStyle="capsule"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czi-3p-eWw">
                                         <rect key="frame" x="0.0" y="117.66666666666669" width="350" height="98"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Америки" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="globe.americas" catalog="system" title="Америки" cornerStyle="capsule"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNx-D3-D9u">
                                         <rect key="frame" x="0.0" y="235.6666666666666" width="350" height="97.666666666666657"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Европа" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="globe.europe.africa.fill" catalog="system" title="Европа" cornerStyle="capsule"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhO-Jn-YyR">
                                         <rect key="frame" x="0.0" y="353.33333333333337" width="350" height="98"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Африка" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="globe.europe.africa" catalog="system" title="Африка" cornerStyle="capsule"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmH-Jb-FLn">
                                         <rect key="frame" x="0.0" y="471.33333333333343" width="350" height="97.666666666666686"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Все страны" cornerStyle="capsule"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="globe" catalog="system" title="Все страны" cornerStyle="capsule"/>
                                         <connections>
                                             <segue destination="MCK-Bx-RO8" kind="presentation" modalPresentationStyle="fullScreen" id="Qu4-x5-WTS"/>
                                         </connections>
@@ -330,6 +330,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cTM-4X-9GL">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytd-VK-FLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HKH-nh-NHY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="8ZS-Rq-Zm2"/>
@@ -345,7 +346,6 @@
                         <segue destination="UN5-3e-F3p" kind="relationship" relationship="rootViewController" id="F6o-sd-du4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytd-VK-FLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1578.1395348837209" y="0.64377682403433478"/>
         </scene>
@@ -396,6 +396,11 @@
         <image name="Rectangle" width="322" height="68"/>
         <image name="gamecontroller" catalog="system" width="128" height="79"/>
         <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="globe.americas" catalog="system" width="128" height="123"/>
+        <image name="globe.central.south.asia.fill" catalog="system" width="128" height="123"/>
+        <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
+        <image name="globe.europe.africa.fill" catalog="system" width="128" height="123"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="medal" catalog="system" width="121" height="128"/>
         <systemColor name="systemRedColor">
