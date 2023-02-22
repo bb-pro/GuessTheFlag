@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		80187D0D29A5E86200367C6C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80187D0C29A5E86200367C6C /* Extension.swift */; };
 		80187D0F29A5E8E300367C6C /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80187D0E29A5E8E300367C6C /* StartScreenViewController.swift */; };
+		80187D1129A5F0DD00367C6C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80187D1029A5F0DD00367C6C /* TabBarViewController.swift */; };
 		801EB44029A5CFDD00645EEA /* NavigationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */; };
 		80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */; };
 		80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		80187D0C29A5E86200367C6C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		80187D0E29A5E8E300367C6C /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		80187D1029A5F0DD00367C6C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreenViewController.swift; sourceTree = "<group>"; };
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,10 +99,10 @@
 		80F7E7C729A48DD100D3CE19 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				80187D1029A5F0DD00367C6C /* TabBarViewController.swift */,
 				80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */,
 				80187D0E29A5E8E300367C6C /* StartScreenViewController.swift */,
 				801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */,
-				80F7E7B829A48D1300D3CE19 /* Main.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +110,7 @@
 		80F7E7C829A48DDF00D3CE19 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				80F7E7B829A48D1300D3CE19 /* Main.storyboard */,
 				80F7E7BD29A48D1500D3CE19 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80187D1129A5F0DD00367C6C /* TabBarViewController.swift in Sources */,
 				80187D0F29A5E8E300367C6C /* StartScreenViewController.swift in Sources */,
 				80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */,
 				80187D0D29A5E86200367C6C /* Extension.swift in Sources */,
