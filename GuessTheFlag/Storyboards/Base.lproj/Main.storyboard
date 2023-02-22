@@ -26,26 +26,35 @@
                                     <constraint firstAttribute="height" constant="200" id="hlg-Pi-dgB"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3jn-d2-0pU">
-                                <rect key="frame" x="70" y="454" width="290" height="394"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3jn-d2-0pU">
+                                <rect key="frame" x="40" y="454" width="350" height="394"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM7-mq-Bbv">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="121.33333333333333"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Начать" cornerStyle="capsule"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="118"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Начать">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="HKH-nh-NHY" kind="presentation" modalPresentationStyle="fullScreen" id="R58-t8-Nzb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmD-jj-dS3">
-                                        <rect key="frame" x="0.0" y="136.33333333333337" width="290" height="121.33333333333331"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Настройки" cornerStyle="capsule"/>
+                                        <rect key="frame" x="0.0" y="138" width="350" height="118"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Настройки">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BND-g4-DrQ">
-                                        <rect key="frame" x="0.0" y="272.66666666666663" width="290" height="121.33333333333331"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Рекорды" cornerStyle="capsule"/>
+                                        <rect key="frame" x="0.0" y="276" width="350" height="118"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Рекорды">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -54,14 +63,19 @@
                         <color key="backgroundColor" red="0.74851319666477112" green="0.57354560333805238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bGA-u4-jUX" firstAttribute="bottom" secondItem="3jn-d2-0pU" secondAttribute="bottom" constant="50" id="8QL-f5-2gL"/>
-                            <constraint firstItem="3jn-d2-0pU" firstAttribute="leading" secondItem="bGA-u4-jUX" secondAttribute="leading" constant="70" id="Eu7-vh-rTQ"/>
+                            <constraint firstItem="3jn-d2-0pU" firstAttribute="leading" secondItem="bGA-u4-jUX" secondAttribute="leading" constant="40" id="Eu7-vh-rTQ"/>
                             <constraint firstItem="GVT-DN-Iqb" firstAttribute="centerX" secondItem="ewe-UT-pw6" secondAttribute="centerX" id="JeJ-cr-g4e"/>
-                            <constraint firstItem="bGA-u4-jUX" firstAttribute="trailing" secondItem="3jn-d2-0pU" secondAttribute="trailing" constant="70" id="UGP-Ff-ReA"/>
+                            <constraint firstItem="bGA-u4-jUX" firstAttribute="trailing" secondItem="3jn-d2-0pU" secondAttribute="trailing" constant="40" id="UGP-Ff-ReA"/>
                             <constraint firstItem="GVT-DN-Iqb" firstAttribute="top" secondItem="bGA-u4-jUX" secondAttribute="top" constant="40" id="ZGU-LZ-q9a"/>
                             <constraint firstItem="3jn-d2-0pU" firstAttribute="top" secondItem="GVT-DN-Iqb" secondAttribute="bottom" constant="59" id="la5-ts-wbe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Угадай Флаг Страны" id="0q1-vj-cCu"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="VM7-mq-Bbv" collectionClass="NSMutableArray" id="F6u-OB-HQV"/>
+                        <outletCollection property="buttons" destination="PmD-jj-dS3" collectionClass="NSMutableArray" id="csu-zv-8qu"/>
+                        <outletCollection property="buttons" destination="BND-g4-DrQ" collectionClass="NSMutableArray" id="6M3-2r-u8i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRq-2D-01X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +97,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Азия" image="globe.central.south.asia.fill" catalog="system" backgroundImage="Rectangle">
+                                        <state key="normal" title="Азия" image="globe.central.south.asia.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -95,7 +109,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Америки" image="globe.americas" catalog="system" backgroundImage="Rectangle">
+                                        <state key="normal" title="Америки" image="globe.americas" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -107,7 +121,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Европа" image="globe.europe.africa.fill" catalog="system" backgroundImage="Rectangle">
+                                        <state key="normal" title="Европа" image="globe.europe.africa.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -119,7 +133,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Африка" image="globe.europe.africa" catalog="system" backgroundImage="Rectangle">
+                                        <state key="normal" title="Африка" image="globe.europe.africa" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -131,7 +145,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Все страны" image="globe" catalog="system" backgroundImage="Rectangle">
+                                        <state key="normal" title="Все страны" image="globe" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -422,7 +436,7 @@
     </scenes>
     <resources>
         <image name="Image 2" width="512" height="512"/>
-        <image name="Rectangle" width="128" height="128"/>
+        <image name="Rectangle" width="322" height="68"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <image name="globe.americas" catalog="system" width="128" height="123"/>
         <image name="globe.central.south.asia.fill" catalog="system" width="128" height="123"/>
