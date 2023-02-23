@@ -10,6 +10,8 @@
 		80187D0D29A5E86200367C6C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80187D0C29A5E86200367C6C /* Extension.swift */; };
 		80187D0F29A5E8E300367C6C /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80187D0E29A5E8E300367C6C /* StartScreenViewController.swift */; };
 		801EB44029A5CFDD00645EEA /* NavigationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */; };
+		80259E4429A7B09900037EBD /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80259E4329A7B09900037EBD /* A.wav */; };
+		80259E4629A7B4BC00037EBD /* E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80259E4529A7B4BC00037EBD /* E.mp3 */; };
 		806B40D529A6589500AC9C43 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 806B40D229A6589500AC9C43 /* all.json */; };
 		806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B40D429A6589500AC9C43 /* Flag Manager.swift */; };
 		80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 		80187D0C29A5E86200367C6C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		80187D0E29A5E8E300367C6C /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		801EB43F29A5CFDD00645EEA /* NavigationScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScreenViewController.swift; sourceTree = "<group>"; };
+		80259E4329A7B09900037EBD /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		80259E4529A7B4BC00037EBD /* E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E.mp3; sourceTree = "<group>"; };
 		806B40D229A6589500AC9C43 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		806B40D429A6589500AC9C43 /* Flag Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag Manager.swift"; sourceTree = "<group>"; };
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +59,15 @@
 			path = Extenstions;
 			sourceTree = "<group>";
 		};
+		80259E4229A7B07700037EBD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				80259E4329A7B09900037EBD /* A.wav */,
+				80259E4529A7B4BC00037EBD /* E.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		80F7E7A629A48D1300D3CE19 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +92,7 @@
 				80F7E7C729A48DD100D3CE19 /* ViewControllers */,
 				80F7E7C829A48DDF00D3CE19 /* Storyboards */,
 				80187D0B29A5E84B00367C6C /* Extenstions */,
+				80259E4229A7B07700037EBD /* Sounds */,
 				80F7E7BB29A48D1500D3CE19 /* Assets.xcassets */,
 			);
 			path = GuessTheFlag;
@@ -180,9 +194,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80259E4629A7B4BC00037EBD /* E.mp3 in Resources */,
 				80F7E7BF29A48D1500D3CE19 /* LaunchScreen.storyboard in Resources */,
 				806B40D529A6589500AC9C43 /* all.json in Resources */,
 				80F7E7BC29A48D1500D3CE19 /* Assets.xcassets in Resources */,
+				80259E4429A7B09900037EBD /* A.wav in Resources */,
 				80F7E7BA29A48D1300D3CE19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
