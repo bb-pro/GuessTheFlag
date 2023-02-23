@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 final class QuizViewController: UIViewController {
     
     @IBOutlet var flagImage: UIImageView!
@@ -16,7 +18,9 @@ final class QuizViewController: UIViewController {
   
     var flags: [String: String]!
     var selected: String!
- 
+    
+    var player: AVAudioPlayer!
+    
     var flag: String!
     var userChoice: String!
     var scoreCount = 0
@@ -30,7 +34,6 @@ final class QuizViewController: UIViewController {
     
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
         
-
         checkAnswer(sender)
 
         Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
@@ -81,7 +84,9 @@ extension QuizViewController {
                 scoreCount += 1
                 scoreLabel.text = "\(scoreCount)"
                 sender.backgroundColor = .green
+                playSound(soundName: "A")
             } else {
+                playErrorSound(soundName: "E")
                 if heartCount < 4 {
                     hearts[heartCount].isHidden = true
                     heartCount += 1
@@ -106,6 +111,16 @@ extension QuizViewController {
         }
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    func playSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+    }
+    func playErrorSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
 }
 
