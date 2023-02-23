@@ -53,9 +53,10 @@ extension QuizViewController {
     @objc func updateUI() {
         flagButtons.forEach { button in
             button.layer.cornerRadius = 15
+            button.backgroundColor = .lightGray
         }
         
-        view.addVerticalGradientLayer()
+        
         
         var answers: [String: String] = [:]
         
