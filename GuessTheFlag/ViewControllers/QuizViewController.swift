@@ -29,25 +29,17 @@ final class QuizViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
     }
-    
-    
-    
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
         
         checkAnswer(sender)
 
         Timer.scheduledTimer(timeInterval: 0.6, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
-
-
-        
     }
     @IBAction func goBack() {
         dismiss(animated: true)
     }
     
 }
-
-
 extension QuizViewController {
     
     @objc func updateUI() {
