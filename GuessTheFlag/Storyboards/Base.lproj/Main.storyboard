@@ -360,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7m-im-cLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6113.0232558139533" y="0.64377682403433478"/>
+            <point key="canvasLocation" x="4972" y="1"/>
         </scene>
         <!--Играть-->
         <scene sceneID="wA1-7L-weJ">
@@ -407,7 +407,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X24-dg-S3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5214.4186046511632" y="0.64377682403433478"/>
+            <point key="canvasLocation" x="4231" y="1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PYa-b0-Fph">
