@@ -22,12 +22,9 @@ final class NavigationScreenViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let navigationVC = segue.destination as? UINavigationController {
-            navigationVC.navigationBar.topItem?.title = regionName
-            guard let quizVC = navigationVC.topViewController as? QuizViewController else { return}
-            quizVC.flags = flags
+        guard let quizVC = segue.destination as? QuizViewController else { return }
+        quizVC.flags = flags
         }
-    }
     
     @IBAction func selectRegionPressed(_ sender: UIButton) {
         guard let buttonTitle = sender.currentTitle else { return }

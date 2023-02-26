@@ -39,7 +39,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Is5-iC-gcK" kind="presentation" modalPresentationStyle="fullScreen" id="VKK-lx-7KC"/>
+                                            <segue destination="UN5-3e-F3p" kind="show" id="uDZ-ym-GZ5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmD-jj-dS3">
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064.885496183206" y="880.98591549295782"/>
+            <point key="canvasLocation" x="2153" y="911"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="8fu-UY-TSh">
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NT0-4b-KuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2715" y="881"/>
+            <point key="canvasLocation" x="1320" y="911"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
@@ -241,25 +241,19 @@
                             <constraint firstItem="900-Ga-ghs" firstAttribute="trailing" secondItem="xCn-S1-QtW" secondAttribute="trailing" constant="40" id="t5P-vb-gjG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Выберите регион" id="P1I-xI-yON">
-                        <barButtonItem key="leftBarButtonItem" title="выйти" id="Fk9-8l-Dbq">
-                            <connections>
-                                <action selector="goBack" destination="UN5-3e-F3p" id="Jta-Qm-7uF"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Выберите регион" id="P1I-xI-yON"/>
                     <connections>
                         <outletCollection property="navigationButtons" destination="hVG-ag-Y8m" collectionClass="NSMutableArray" id="XXZ-SJ-TTM"/>
                         <outletCollection property="navigationButtons" destination="czi-3p-eWw" collectionClass="NSMutableArray" id="Sbk-So-SQd"/>
                         <outletCollection property="navigationButtons" destination="TNx-D3-D9u" collectionClass="NSMutableArray" id="uO4-zR-SLb"/>
                         <outletCollection property="navigationButtons" destination="hhO-Jn-YyR" collectionClass="NSMutableArray" id="JzJ-2A-PjD"/>
                         <outletCollection property="navigationButtons" destination="bmH-Jb-FLn" collectionClass="NSMutableArray" id="8wl-l4-r96"/>
-                        <segue destination="Wkx-V9-QGJ" kind="presentation" identifier="showQuiz" modalPresentationStyle="fullScreen" id="8Ni-cq-v02"/>
+                        <segue destination="fuY-me-IJb" kind="show" identifier="showQuiz" id="PMR-KS-oXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0z9-9w-KDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3438" y="1"/>
+            <point key="canvasLocation" x="2819" y="0.0"/>
         </scene>
         <!--Азия-->
         <scene sceneID="nLb-Kd-cuY">
@@ -415,13 +409,7 @@
                             <constraint firstItem="fiQ-bH-5Io" firstAttribute="leading" secondItem="tBx-Mm-puH" secondAttribute="trailing" constant="11" id="tpB-jg-OQE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Азия" id="1Rs-Ul-IAW">
-                        <barButtonItem key="leftBarButtonItem" title="выйти" id="JeP-gE-PAE">
-                            <connections>
-                                <action selector="goBack" destination="fuY-me-IJb" id="vdN-uA-5uF"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Азия" id="1Rs-Ul-IAW"/>
                     <connections>
                         <outlet property="flagImage" destination="fur-TA-OK2" id="45A-lC-M0j"/>
                         <outlet property="scoreLabel" destination="nQI-sX-1iv" id="zDo-K0-ZfT"/>
@@ -438,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7m-im-cLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4972" y="1"/>
+            <point key="canvasLocation" x="3709" y="0.0"/>
         </scene>
         <!--Играть-->
         <scene sceneID="wA1-7L-weJ">
@@ -465,49 +453,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWH-0B-wTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="805.11627906976742" y="0.64377682403433478"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BG1-td-qgM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wkx-V9-QGJ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Xsq-bo-84a">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fuY-me-IJb" kind="relationship" relationship="rootViewController" id="qQO-1C-Gr9"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X24-dg-S3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4231" y="1"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="PYa-b0-Fph">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KT2-37-60f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Is5-iC-gcK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="isF-gy-DTc"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uC7-Jb-Fgu">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="UN5-3e-F3p" kind="relationship" relationship="rootViewController" id="tah-I3-i8D"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="2590" y="1"/>
         </scene>
     </scenes>
     <resources>
