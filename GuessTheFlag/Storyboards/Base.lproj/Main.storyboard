@@ -62,6 +62,9 @@
                                         <state key="normal" title="Рекорды" image="medal" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="bEC-O3-DKN" kind="show" id="f2M-9l-nxQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -88,6 +91,22 @@
             </objects>
             <point key="canvasLocation" x="1703.7209302325582" y="0.64377682403433478"/>
         </scene>
+        <!--Рекорды-->
+        <scene sceneID="Nax-WP-Y01">
+            <objects>
+                <viewController id="bEC-O3-DKN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmG-Pv-AIX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N18-cy-CcO"/>
+                        <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Рекорды" id="1MW-O5-P1H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="880.98591549295782"/>
+        </scene>
         <!--Настройки-->
         <scene sceneID="8fu-UY-TSh">
             <objects>
@@ -104,7 +123,7 @@
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="shareplay" catalog="system" title="Поделиться приложением"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system" title="Отзывы о приложении"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-x5-sQ4">
                                         <rect key="frame" x="0.0" y="164.33333333333331" width="313" height="134.33333333333331"/>
@@ -124,7 +143,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UFf-vM-vUq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="S7V-fF-LdA" firstAttribute="leading" secondItem="UFf-vM-vUq" secondAttribute="leading" constant="40" id="BN9-Wi-KUm"/>
                             <constraint firstItem="S7V-fF-LdA" firstAttribute="top" secondItem="UFf-vM-vUq" secondAttribute="top" constant="100" id="UmB-uC-Nfh"/>
@@ -136,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NT0-4b-KuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2589" y="872"/>
+            <point key="canvasLocation" x="2715" y="881"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
@@ -492,6 +511,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <image name="globe.americas" catalog="system" width="128" height="123"/>
@@ -11449,9 +11469,6 @@ VgAAAAAAAAAAAAAAAAAKAX0
         </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
