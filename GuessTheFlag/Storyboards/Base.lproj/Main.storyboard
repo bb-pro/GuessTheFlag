@@ -31,7 +31,7 @@
                                 <rect key="frame" x="40" y="454" width="313" height="314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM7-mq-Bbv">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="91.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="63.666666666666664"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -42,8 +42,20 @@
                                             <segue destination="UN5-3e-F3p" kind="show" id="uDZ-ym-GZ5"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7K-CT-RT1">
+                                        <rect key="frame" x="0.0" y="83.666666666666629" width="313" height="63.333333333333343"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Страны" image="globe.central.south.asia.fill" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Wdr-jR-Jng" kind="show" id="JhU-er-zsw"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmD-jj-dS3">
-                                        <rect key="frame" x="0.0" y="111.33333333333337" width="313" height="91.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="167" width="313" height="63.666666666666657"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -55,7 +67,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BND-g4-DrQ">
-                                        <rect key="frame" x="0.0" y="222.66666666666666" width="313" height="91.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="250.66666666666666" width="313" height="63.333333333333343"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -105,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153" y="911"/>
+            <point key="canvasLocation" x="2579" y="794"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="8fu-UY-TSh">
@@ -124,9 +136,6 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system" title="Отзывы о приложении"/>
-                                        <connections>
-                                            <action selector="writeFeedbackPressed" destination="dnq-Od-yo4" eventType="touchUpInside" id="8Vr-SZ-3Kj"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-x5-sQ4">
                                         <rect key="frame" x="0.0" y="164.33333333333331" width="313" height="134.33333333333331"/>
@@ -158,7 +167,89 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NT0-4b-KuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="911"/>
+            <point key="canvasLocation" x="1703" y="795"/>
+        </scene>
+        <!--Выберите регион-->
+        <scene sceneID="ftB-NO-NwA">
+            <objects>
+                <viewController id="Wdr-jR-Jng" customClass="CountriesViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uxi-FG-whi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="szQ-iv-3Ck">
+                                <rect key="frame" x="40" y="289" width="313" height="489"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2d-Y2-LGg">
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="81.666666666666671"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Азия" image="globe.central.south.asia.fill" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-32-fvS">
+                                        <rect key="frame" x="0.0" y="101.66666666666669" width="313" height="82"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Америки" image="globe.americas" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-1p-3Ro">
+                                        <rect key="frame" x="0.0" y="203.66666666666669" width="313" height="81.666666666666686"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Европа" image="globe.europe.africa.fill" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6K-kP-6jp">
+                                        <rect key="frame" x="0.0" y="305.33333333333337" width="313" height="82"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Африка" image="globe.europe.africa" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK9-od-75V">
+                                        <rect key="frame" x="0.0" y="407.33333333333337" width="313" height="81.666666666666686"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Все страны" image="globe" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zE1-EV-2vM"/>
+                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zE1-EV-2vM" firstAttribute="trailing" secondItem="szQ-iv-3Ck" secondAttribute="trailing" constant="40" id="GCf-4B-Pmw"/>
+                            <constraint firstItem="zE1-EV-2vM" firstAttribute="bottom" secondItem="szQ-iv-3Ck" secondAttribute="bottom" constant="40" id="LXC-W6-AuF"/>
+                            <constraint firstItem="szQ-iv-3Ck" firstAttribute="centerX" secondItem="Uxi-FG-whi" secondAttribute="centerX" id="ffM-yS-dvp"/>
+                            <constraint firstItem="szQ-iv-3Ck" firstAttribute="top" secondItem="zE1-EV-2vM" secondAttribute="top" constant="134" id="lEm-sm-rxR"/>
+                            <constraint firstItem="szQ-iv-3Ck" firstAttribute="leading" secondItem="zE1-EV-2vM" secondAttribute="leading" constant="40" id="neq-8y-6GP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Выберите регион" id="mw9-Dp-vJv"/>
+                    <connections>
+                        <outletCollection property="regionNames" destination="d2d-Y2-LGg" collectionClass="NSMutableArray" id="41w-Zn-G3x"/>
+                        <outletCollection property="regionNames" destination="c4W-32-fvS" collectionClass="NSMutableArray" id="X06-2W-i3f"/>
+                        <outletCollection property="regionNames" destination="RTp-1p-3Ro" collectionClass="NSMutableArray" id="ecX-yo-ZX8"/>
+                        <outletCollection property="regionNames" destination="Q6K-kP-6jp" collectionClass="NSMutableArray" id="bCh-6s-7bd"/>
+                        <outletCollection property="regionNames" destination="oK9-od-75V" collectionClass="NSMutableArray" id="GwS-WS-qtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHL-Y9-6AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="794"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
@@ -429,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7m-im-cLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3709" y="0.0"/>
+            <point key="canvasLocation" x="3756" y="0.0"/>
         </scene>
         <!--Играть-->
         <scene sceneID="wA1-7L-weJ">
