@@ -15,9 +15,8 @@ final class QuizViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var hearts: [UIImageView]!
     
-  
     var flags: [String: String]!
-    var selected: String!
+    private var selected: String!
     
     var player: AVAudioPlayer!
     
@@ -48,21 +47,16 @@ extension QuizViewController {
             button.backgroundColor = .lightGray
         }
         
-        
-        
         var answers: [String: String] = [:]
-        
         
         for (button, answer) in zip(flagButtons, flags.shuffled()) {
             button.setTitle(answer.key, for: .normal)
             answers[answer.key] = answer.value
         }
         
-        
         if let correctAnswer = answers.randomElement() {
             flag = correctAnswer.key
             flagImage.image = UIImage(named: correctAnswer.value.lowercased())
-            
         }
         
         flagButtons.forEach { button in
@@ -71,7 +65,6 @@ extension QuizViewController {
     }
     
     func checkAnswer(_ sender: UIButton) {
-        
         if let buttonTitle = sender.title(for: .selected) {
             if buttonTitle == flag {
                 scoreCount += 1
@@ -87,7 +80,6 @@ extension QuizViewController {
                     hearts[heartCount].isHidden = true
                     showAlert(title: "Проиграно", message: "Ваши баллы: \(scoreCount)")
                 }
-                
                 sender.backgroundColor = .red
                 flagButtons.forEach { button in
                     if button.title(for: .normal) == flag {

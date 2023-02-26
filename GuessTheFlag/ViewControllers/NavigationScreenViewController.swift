@@ -13,7 +13,7 @@ final class NavigationScreenViewController: UIViewController {
 
     private var flags: [String: String]!
     private var regionName: String!
-    
+    private let flagManager = FlagManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
@@ -27,9 +27,6 @@ final class NavigationScreenViewController: UIViewController {
             guard let quizVC = navigationVC.topViewController as? QuizViewController else { return}
             quizVC.flags = flags
         }
-        
-
-        
     }
     
     @IBAction func selectRegionPressed(_ sender: UIButton) {
@@ -42,24 +39,21 @@ final class NavigationScreenViewController: UIViewController {
     @IBAction func goBack() {
         dismiss(animated: true)
     }
-    
-    
-    
 }
 
 private extension NavigationScreenViewController {
     func updateUI(with title: String) {
         switch title {
         case "Азия":
-            flags = FlagManager.parseAsianCountriesJson()
+            flags = flagManager.asianData
         case "Европа":
-            flags = FlagManager.parseEuropeCountriesJson()
+            flags = flagManager.europeData
         case "Африка":
-            flags = FlagManager.parseAfricanCountriesJson()
+            flags = flagManager.africanData
         case "Америки":
-            flags = FlagManager.parseAmericanCountriesJson()
+            flags = flagManager.americasData
         default:
-            flags = FlagManager.parseAll()
+            flags = flagManager.allCountries
         }
     }
 }
