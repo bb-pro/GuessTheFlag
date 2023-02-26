@@ -30,6 +30,7 @@
 		80259E4329A7B09900037EBD /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		80259E4529A7B4BC00037EBD /* E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E.mp3; sourceTree = "<group>"; };
 		80415A6B29AB8C4900C2F7DC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		80415A6E29ABA04E00C2F7DC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		806B40D229A6589500AC9C43 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		806B40D429A6589500AC9C43 /* Flag Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag Manager.swift"; sourceTree = "<group>"; };
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,11 +71,20 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		80415A6D29ABA04D00C2F7DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80415A6E29ABA04E00C2F7DC /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80F7E7A629A48D1300D3CE19 = {
 			isa = PBXGroup;
 			children = (
 				80F7E7B129A48D1300D3CE19 /* GuessTheFlag */,
 				80F7E7B029A48D1300D3CE19 /* Products */,
+				80415A6D29ABA04D00C2F7DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

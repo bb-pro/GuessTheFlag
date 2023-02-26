@@ -8,13 +8,18 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
-    @IBOutlet var colorWell: UIColorWell!
-    
-    private var color: UIColor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func writeFeedbackPressed() {
+        let url = URL(string: "bektemurmamashayev07@gmail.com")
+        let activityViewController = UIActivityViewController(
+            activityItems: [url],
+            applicationActivities: nil
+        )
+        present(activityViewController, animated: true, completion: nil)
     }
     
 }

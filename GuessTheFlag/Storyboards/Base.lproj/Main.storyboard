@@ -124,6 +124,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system" title="Отзывы о приложении"/>
+                                        <connections>
+                                            <action selector="writeFeedbackPressed" destination="dnq-Od-yo4" eventType="touchUpInside" id="8Vr-SZ-3Kj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-x5-sQ4">
                                         <rect key="frame" x="0.0" y="164.33333333333331" width="313" height="134.33333333333331"/>
