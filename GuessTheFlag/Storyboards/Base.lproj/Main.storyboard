@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zrL-Mf-gny">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -16,11 +16,11 @@
             <objects>
                 <viewController id="CM2-2r-flW" customClass="StartScreenViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ewe-UT-pw6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.badge.chevron.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GVT-DN-Iqb">
-                                <rect key="frame" x="94.999999999999986" y="195.66666666666663" width="201.66666666666669" height="199.00000000000006"/>
+                                <rect key="frame" x="58.5" y="132.5" width="201.5" height="199.5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ei9-bt-aRp"/>
@@ -28,14 +28,14 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3jn-d2-0pU">
-                                <rect key="frame" x="40" y="454" width="313" height="314"/>
+                                <rect key="frame" x="40" y="391.5" width="240" height="126.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM7-mq-Bbv">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="63.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="16.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Начать" image="play" catalog="system">
+                                        <state key="normal" title="Играть" image="play" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -43,11 +43,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7K-CT-RT1">
-                                        <rect key="frame" x="0.0" y="83.666666666666629" width="313" height="63.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="240" height="17"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Страны" image="globe.central.south.asia.fill" catalog="system">
+                                        <state key="normal" title="Учить  флаги" image="globe.central.south.asia.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmD-jj-dS3">
-                                        <rect key="frame" x="0.0" y="167" width="313" height="63.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="73.5" width="240" height="16.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -67,7 +67,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BND-g4-DrQ">
-                                        <rect key="frame" x="0.0" y="250.66666666666666" width="313" height="63.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="110" width="240" height="16.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -108,7 +108,7 @@
             <objects>
                 <viewController id="bEC-O3-DKN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hmG-Pv-AIX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="N18-cy-CcO"/>
                         <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,28 +124,28 @@
             <objects>
                 <viewController id="dnq-Od-yo4" customClass="SettingsViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cCL-Dr-qAS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-fF-LdA">
-                                <rect key="frame" x="40" y="255" width="313" height="463"/>
+                                <rect key="frame" x="40" y="192.5" width="240" height="275.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kig-8y-hQ4">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="134.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="72"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system" title="Отзывы о приложении"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-x5-sQ4">
-                                        <rect key="frame" x="0.0" y="164.33333333333331" width="313" height="134.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="102" width="240" height="71.5"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="shareplay" catalog="system" title="Поделиться приложением"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phc-6F-6iv">
-                                        <rect key="frame" x="0.0" y="328.66666666666663" width="313" height="134.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="203.5" width="240" height="72"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -174,56 +174,71 @@
             <objects>
                 <viewController id="Wdr-jR-Jng" customClass="CountriesViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uxi-FG-whi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="szQ-iv-3Ck">
-                                <rect key="frame" x="40" y="289" width="313" height="489"/>
+                                <rect key="frame" x="40" y="226.5" width="240" height="301.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2d-Y2-LGg">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="81.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="44.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Азия" image="globe.central.south.asia.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="CSi-j6-eaM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-32-fvS">
-                                        <rect key="frame" x="0.0" y="101.66666666666669" width="313" height="82"/>
+                                        <rect key="frame" x="0.0" y="64.5" width="240" height="44"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Америки" image="globe.americas" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="gyP-21-j5A"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-1p-3Ro">
-                                        <rect key="frame" x="0.0" y="203.66666666666669" width="313" height="81.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="128.5" width="240" height="44.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Европа" image="globe.europe.africa.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="PSj-Za-8hh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6K-kP-6jp">
-                                        <rect key="frame" x="0.0" y="305.33333333333337" width="313" height="82"/>
+                                        <rect key="frame" x="0.0" y="193" width="240" height="44"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Африка" image="globe.europe.africa" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="aPS-aA-A67"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK9-od-75V">
-                                        <rect key="frame" x="0.0" y="407.33333333333337" width="313" height="81.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="257" width="240" height="44.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Все страны" image="globe" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="OV8-MV-9kI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -245,25 +260,151 @@
                         <outletCollection property="regionNames" destination="RTp-1p-3Ro" collectionClass="NSMutableArray" id="ecX-yo-ZX8"/>
                         <outletCollection property="regionNames" destination="Q6K-kP-6jp" collectionClass="NSMutableArray" id="bCh-6s-7bd"/>
                         <outletCollection property="regionNames" destination="oK9-od-75V" collectionClass="NSMutableArray" id="GwS-WS-qtF"/>
+                        <segue destination="3c9-s3-2kx" kind="show" identifier="showFlags" id="xLP-VF-A3j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHL-Y9-6AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="794"/>
+            <point key="canvasLocation" x="804" y="811"/>
+        </scene>
+        <!--Регион-->
+        <scene sceneID="UCV-Wh-ATD">
+            <objects>
+                <viewController id="3c9-s3-2kx" customClass="LearnFlagViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D5X-Km-A05">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-w7-jUT">
+                                <rect key="frame" x="60" y="142.5" width="200" height="98"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="31u-ea-TBK">
+                                <rect key="frame" x="16" y="305.5" width="92.5" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-uO-wJm">
+                                        <rect key="frame" x="0.0" y="0.0" width="92.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISO-код:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwi-Q4-9DZ">
+                                        <rect key="frame" x="0.0" y="72" width="92.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92.666666666666671" id="N4z-5J-b1O"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Флаг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmi-AK-vaU">
+                                <rect key="frame" x="132.5" y="240.5" width="55.5" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VN7-nj-mXW">
+                                <rect key="frame" x="17" y="462" width="286" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  1 из 200  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnS-cc-Xxa">
+                                        <rect key="frame" x="83" y="0.0" width="120.5" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="oah-Vc-O8s">
+                                        <rect key="frame" x="0.0" y="58" width="286" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y6-os-KUs">
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="38"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title=" Предыдущий ">
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showPreviousFlagTapped" destination="3c9-s3-2kx" eventType="touchUpInside" id="LaY-gs-eUK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFK-Mb-B5h">
+                                                <rect key="frame" x="159" y="0.0" width="127" height="38"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title=" Следующий "/>
+                                                <connections>
+                                                    <action selector="showNextFlagTapped" destination="3c9-s3-2kx" eventType="touchUpInside" id="anP-ib-nSq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="l4e-Ie-mrC">
+                                <rect key="frame" x="118.5" y="305.5" width="185.5" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-JY-Jue">
+                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISO-код" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRj-Q4-fsD">
+                                        <rect key="frame" x="0.0" y="72" width="185.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BRP-VC-drD"/>
+                        <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l4e-Ie-mrC" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="65" id="3IU-YB-ETq"/>
+                            <constraint firstItem="zeP-w7-jUT" firstAttribute="height" secondItem="D5X-Km-A05" secondAttribute="height" multiplier="0.172414" id="6mV-6d-IlD"/>
+                            <constraint firstItem="VN7-nj-mXW" firstAttribute="centerX" secondItem="D5X-Km-A05" secondAttribute="centerX" id="EbW-kR-yvd"/>
+                            <constraint firstItem="31u-ea-TBK" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="65" id="HUH-oK-Bjz"/>
+                            <constraint firstItem="BRP-VC-drD" firstAttribute="trailing" secondItem="zeP-w7-jUT" secondAttribute="trailing" constant="60" id="NhB-jf-wSI"/>
+                            <constraint firstItem="xmi-AK-vaU" firstAttribute="centerX" secondItem="zeP-w7-jUT" secondAttribute="centerX" id="S9K-DN-eCI"/>
+                            <constraint firstItem="BRP-VC-drD" firstAttribute="bottom" secondItem="VN7-nj-mXW" secondAttribute="bottom" constant="10" id="TKu-nQ-kqa"/>
+                            <constraint firstItem="zeP-w7-jUT" firstAttribute="leading" secondItem="BRP-VC-drD" secondAttribute="leading" constant="60" id="Uqk-w9-0dH"/>
+                            <constraint firstItem="xmi-AK-vaU" firstAttribute="height" secondItem="D5X-Km-A05" secondAttribute="height" multiplier="0.0307346" id="WDB-bB-1ph"/>
+                            <constraint firstItem="l4e-Ie-mrC" firstAttribute="leading" secondItem="31u-ea-TBK" secondAttribute="trailing" constant="10" id="Yu1-PE-Pmj"/>
+                            <constraint firstItem="xmi-AK-vaU" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" id="hRE-Vh-iCs"/>
+                            <constraint firstItem="31u-ea-TBK" firstAttribute="leading" secondItem="BRP-VC-drD" secondAttribute="leading" constant="16" id="kkI-0l-75R"/>
+                            <constraint firstItem="BRP-VC-drD" firstAttribute="trailing" secondItem="l4e-Ie-mrC" secondAttribute="trailing" constant="16" id="o7w-M6-3ai"/>
+                            <constraint firstItem="zeP-w7-jUT" firstAttribute="top" secondItem="BRP-VC-drD" secondAttribute="top" constant="50" id="od7-09-kZI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Регион" id="a1i-o2-PeD"/>
+                    <connections>
+                        <outlet property="countryLabel" destination="EpJ-JY-Jue" id="0Ex-fX-SSg"/>
+                        <outlet property="flagCountInfoLabel" destination="YnS-cc-Xxa" id="XS9-qe-r7R"/>
+                        <outlet property="flagImage" destination="zeP-w7-jUT" id="gmz-CH-9aM"/>
+                        <outlet property="isoLabel" destination="kRj-Q4-fsD" id="z3d-pB-k7C"/>
+                        <outletCollection property="navigationButtons" destination="FFK-Mb-B5h" collectionClass="NSMutableArray" id="7Ry-QS-yLD"/>
+                        <outletCollection property="navigationButtons" destination="2Y6-os-KUs" collectionClass="NSMutableArray" id="VrP-St-pQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZX-vH-ObS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.5" y="1594.0140845070423"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
             <objects>
                 <viewController id="UN5-3e-F3p" customClass="NavigationScreenViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsc-wW-XJB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xCn-S1-QtW">
-                                <rect key="frame" x="40" y="289" width="313" height="489"/>
+                                <rect key="frame" x="40" y="226.5" width="240" height="301.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-ag-Y8m">
-                                        <rect key="frame" x="0.0" y="0.0" width="313" height="81.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="44.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -275,7 +416,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czi-3p-eWw">
-                                        <rect key="frame" x="0.0" y="101.66666666666669" width="313" height="82"/>
+                                        <rect key="frame" x="0.0" y="64.5" width="240" height="44"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -287,7 +428,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNx-D3-D9u">
-                                        <rect key="frame" x="0.0" y="203.66666666666669" width="313" height="81.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="128.5" width="240" height="44.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -299,7 +440,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhO-Jn-YyR">
-                                        <rect key="frame" x="0.0" y="305.33333333333337" width="313" height="82"/>
+                                        <rect key="frame" x="0.0" y="193" width="240" height="44"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -311,7 +452,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmH-Jb-FLn">
-                                        <rect key="frame" x="0.0" y="407.33333333333337" width="313" height="81.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="257" width="240" height="44.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -354,17 +495,17 @@
             <objects>
                 <viewController id="fuY-me-IJb" customClass="QuizViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dg6-vu-fMU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fur-TA-OK2">
-                                <rect key="frame" x="76.666666666666686" y="294" width="240" height="128"/>
+                                <rect key="frame" x="62.5" y="231.5" width="195" height="85.5"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-b4-H0a">
-                                <rect key="frame" x="20" y="472" width="353" height="296"/>
+                                <rect key="frame" x="20" y="367" width="280" height="151"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-A8-tmM" userLabel="Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="66.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="tintColor" red="0.54503712559999995" green="0.31432738440000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -377,7 +518,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAM-P7-SmN">
-                                        <rect key="frame" x="0.0" y="76.666666666666629" width="353" height="66.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="40" width="280" height="30.5"/>
                                         <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -389,7 +530,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEL-J2-P93">
-                                        <rect key="frame" x="0.0" y="153" width="353" height="66.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="80.5" width="280" height="30"/>
                                         <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -401,7 +542,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-Ww-w41">
-                                        <rect key="frame" x="0.0" y="229.66666666666666" width="353" height="66.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="120.5" width="280" height="30.5"/>
                                         <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -415,58 +556,58 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баллы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-7D-2eD">
-                                <rect key="frame" x="19.999999999999996" y="175" width="63.666666666666657" height="24"/>
+                                <rect key="frame" x="20" y="112.5" width="63.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQI-sX-1iv">
-                                <rect key="frame" x="103.66666666666667" y="175" width="13" height="25.333333333333343"/>
+                                <rect key="frame" x="103.5" y="112.5" width="13" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlH-bA-S2x">
-                                <rect key="frame" x="33" y="388" width="0.0" height="0.0"/>
+                                <rect key="frame" x="33" y="104" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Попытки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBx-Mm-puH">
-                                <rect key="frame" x="20" y="211" width="85" height="25.333333333333343"/>
+                                <rect key="frame" x="20" y="148.5" width="85" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fiQ-bH-5Io">
-                                <rect key="frame" x="116" y="204" width="100" height="40"/>
+                                <rect key="frame" x="116" y="141.5" width="100" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-DK-oCi">
-                                        <rect key="frame" x="0.0" y="-1.6666666666666679" width="19.333333333333332" height="44.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="-2" width="19" height="45"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-qy-u4K">
-                                        <rect key="frame" x="20.333333333333343" y="-1.6666666666666679" width="19" height="44.666666666666671"/>
+                                        <rect key="frame" x="20" y="-2" width="19.5" height="45"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3t-hz-Akt">
-                                        <rect key="frame" x="40.333333333333343" y="-1.6666666666666679" width="19.333333333333329" height="44.666666666666671"/>
+                                        <rect key="frame" x="40.5" y="-2" width="19" height="45"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ye1-p3-LJV">
-                                        <rect key="frame" x="60.666666666666657" y="-1.6666666666666679" width="19" height="44.666666666666671"/>
+                                        <rect key="frame" x="60.5" y="-2" width="19.5" height="45"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-PR-uzm">
-                                        <rect key="frame" x="80.666666666666657" y="-1.6666666666666679" width="19.333333333333329" height="44.666666666666671"/>
+                                        <rect key="frame" x="81" y="-2" width="19" height="45"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <imageReference key="image" image="heart.fill" catalog="system" symbolScale="large"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
@@ -529,7 +670,7 @@
                     <tabBarItem key="tabBarItem" title="Играть" image="tabBarItem:S0Q-hh-cIo:image" id="S0Q-hh-cIo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oMR-9R-zDg">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">

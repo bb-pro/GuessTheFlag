@@ -35,7 +35,7 @@ struct FlagManager {
     let allCountries: [String: String] = parseAll()
     let africanData: [String: String] = parseAfricanCountriesJson()
     
-    static func parseAsianCountriesJson() -> [String: String] {
+    private static func parseAsianCountriesJson() -> [String: String] {
         var asianCountries: [CountriesWithRegions] = []
         var countryDict: [String: String] = [:]
         
@@ -61,7 +61,7 @@ struct FlagManager {
         return countryDict
     }
     
-    static func parseAmericanCountriesJson() -> [String: String] {
+    private static func parseAmericanCountriesJson() -> [String: String] {
         var asianCountries: [CountriesWithRegions] = []
         var countryDict: [String: String] = [:]
         
@@ -87,7 +87,7 @@ struct FlagManager {
         return countryDict
     }
     
-    static func parseEuropeCountriesJson() -> [String: String] {
+    private static func parseEuropeCountriesJson() -> [String: String] {
         var asianCountries: [CountriesWithRegions] = []
         var countryDict: [String: String] = [:]
         
@@ -113,7 +113,7 @@ struct FlagManager {
         return countryDict
     }
     
-    static func parseAfricanCountriesJson() -> [String: String] {
+    private static func parseAfricanCountriesJson() -> [String: String] {
         var asianCountries: [CountriesWithRegions] = []
         var countryDict: [String: String] = [:]
         
@@ -139,7 +139,7 @@ struct FlagManager {
         return countryDict
     }
     
-    static func parseAll() -> [String: String] {
+    private static func parseAll() -> [String: String] {
         var asianCountries: [CountriesWithRegions] = []
         var countryDict: [String: String] = [:]
         

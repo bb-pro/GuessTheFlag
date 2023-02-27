@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +14,60 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="C09-wn-NJh">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.desk" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ouQ-yD-Afl">
+                                <rect key="frame" x="95" y="402" width="240" height="128"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127.33333333333331" id="gvh-yP-kBX"/>
+                                    <constraint firstAttribute="width" constant="240" id="p1g-aa-Q8K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадай Флаг" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nv-no-o6v">
+                                <rect key="frame" x="117.66666666666667" y="549.66666666666663" width="194.66666666666663" height="32.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz" translatesAutoresizingMaskIntoConstraints="NO" id="hoD-x3-GsQ">
+                                <rect key="frame" x="77.333333333333343" y="193.33333333333337" width="275.33333333333326" height="179"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8nv-no-o6v" firstAttribute="top" secondItem="ouQ-yD-Afl" secondAttribute="bottom" constant="20" id="M5W-ng-H9w"/>
+                            <constraint firstItem="C09-wn-NJh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="U7v-DY-O9B"/>
+                            <constraint firstItem="ouQ-yD-Afl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bIQ-oO-lkO"/>
+                            <constraint firstItem="hoD-x3-GsQ" firstAttribute="width" secondItem="C09-wn-NJh" secondAttribute="width" multiplier="0.64" id="d7R-eq-mgB"/>
+                            <constraint firstItem="C09-wn-NJh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fIO-wC-uwr"/>
+                            <constraint firstItem="8nv-no-o6v" firstAttribute="centerX" secondItem="ouQ-yD-Afl" secondAttribute="centerX" id="guP-YQ-Rps"/>
+                            <constraint firstItem="ouQ-yD-Afl" firstAttribute="top" secondItem="hoD-x3-GsQ" secondAttribute="bottom" constant="30" id="iGT-nd-xVl"/>
+                            <constraint firstItem="8nv-no-o6v" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.452926" id="kSJ-kx-xOY"/>
+                            <constraint firstItem="C09-wn-NJh" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="mPG-C2-8zi"/>
+                            <constraint firstItem="C09-wn-NJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mvz-u3-EOS"/>
+                            <constraint firstItem="hoD-x3-GsQ" firstAttribute="height" secondItem="C09-wn-NJh" secondAttribute="height" multiplier="0.191904" id="rWP-ox-pQH"/>
+                            <constraint firstItem="ouQ-yD-Afl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uuM-cb-OH7"/>
+                            <constraint firstItem="hoD-x3-GsQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vNW-Zs-T2r"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="1080" height="2339"/>
+        <image name="globe.desk" catalog="system" width="115" height="128"/>
+        <image name="uz" width="2560" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
