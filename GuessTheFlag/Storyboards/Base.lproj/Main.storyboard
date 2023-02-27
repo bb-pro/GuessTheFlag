@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRq-2D-01X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703.7209302325582" y="0.64377682403433478"/>
+            <point key="canvasLocation" x="1579" y="0.0"/>
         </scene>
         <!--Рекорды-->
         <scene sceneID="Nax-WP-Y01">
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2579" y="794"/>
+            <point key="canvasLocation" x="2381" y="794"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="8fu-UY-TSh">
@@ -167,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NT0-4b-KuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="795"/>
+            <point key="canvasLocation" x="1578" y="794"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="ftB-NO-NwA">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHL-Y9-6AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="794"/>
+            <point key="canvasLocation" x="804" y="794"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
@@ -347,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0z9-9w-KDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2819" y="0.0"/>
+            <point key="canvasLocation" x="2381" y="0.0"/>
         </scene>
         <!--Азия-->
         <scene sceneID="nLb-Kd-cuY">
@@ -520,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7m-im-cLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3756" y="0.0"/>
+            <point key="canvasLocation" x="3189" y="0.0"/>
         </scene>
         <!--Играть-->
         <scene sceneID="wA1-7L-weJ">
