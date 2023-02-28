@@ -26,7 +26,6 @@ struct CountriesWithRegions: Decodable {
     }
 }
 
-
 struct FlagManager {
     
     let asianData: [String: String] = parseAsianCountriesJson()
