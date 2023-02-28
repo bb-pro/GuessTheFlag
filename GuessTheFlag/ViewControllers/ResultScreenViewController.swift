@@ -31,11 +31,13 @@ class ResultScreenViewController: UIViewController {
 
 private extension ResultScreenViewController {
     func updateUI() {
-        
+        let recordInt = UserDefaults.standard.integer(forKey: "Record")
         stickerImage.layer.cornerRadius = stickerImage.frame.width / 2
         
-        if result > defaults.integer(forKey: "Record") {
+        
+        if result > recordInt {
             defaults.set(result, forKey: "Record")
+            UserDefaults.standard.synchronize()
         }
         guard let userResult = result else { return }
         resultButton.setTitle(String(userResult), for: .normal)
