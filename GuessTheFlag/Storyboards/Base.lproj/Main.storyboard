@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2380" y="811"/>
+            <point key="canvasLocation" x="2365" y="811"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="8fu-UY-TSh">
@@ -390,7 +390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZX-vH-ObS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="1573"/>
+            <point key="canvasLocation" x="805" y="1516"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
@@ -657,11 +657,89 @@
                         <outletCollection property="hearts" destination="P3t-hz-Akt" collectionClass="NSMutableArray" id="Cn7-J0-Ld4"/>
                         <outletCollection property="hearts" destination="ye1-p3-LJV" collectionClass="NSMutableArray" id="bqY-p4-w4y"/>
                         <outletCollection property="hearts" destination="kI9-PR-uzm" collectionClass="NSMutableArray" id="RJ9-NB-pHx"/>
+                        <segue destination="1Eg-c8-MnZ" kind="show" identifier="showResult" id="npa-ul-46O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7m-im-cLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3073" y="1"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="cvZ-lP-uNH">
+            <objects>
+                <viewController id="1Eg-c8-MnZ" customClass="ResultScreenViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="geB-oW-HfI">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hXB-Mv-0eq">
+                                <rect key="frame" x="104.00000000000001" y="425" width="222.33333333333337" height="507"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBt-HN-1iB">
+                                        <rect key="frame" x="0.0" y="0.0" width="222.33333333333334" height="155.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="15">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="globe.americas.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3x-P0-M40">
+                                        <rect key="frame" x="0.0" y="175.66666666666663" width="222.33333333333334" height="155.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекорд" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="261-OD-kmU">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="155.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnZ-Sz-dOm">
+                                                <rect key="frame" x="119.66666666666666" y="0.0" width="102.66666666666666" height="155.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buh-aX-TKP">
+                                        <rect key="frame" x="0.0" y="351.33333333333337" width="222.33333333333334" height="155.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="На главный экран"/>
+                                        <connections>
+                                            <action selector="goBack" destination="1Eg-c8-MnZ" eventType="touchUpInside" id="35u-yQ-LrX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 6" translatesAutoresizingMaskIntoConstraints="NO" id="I4c-HG-zFx">
+                                <rect key="frame" x="115" y="205" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Lck-Ol-mWI"/>
+                                    <constraint firstAttribute="width" constant="200" id="iMI-N3-o1b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Oi-UX-P55"/>
+                        <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I4c-HG-zFx" firstAttribute="top" secondItem="3Oi-UX-P55" secondAttribute="top" constant="50" id="FWl-CZ-I6E"/>
+                            <constraint firstItem="I4c-HG-zFx" firstAttribute="centerX" secondItem="geB-oW-HfI" secondAttribute="centerX" id="JI0-GZ-78K"/>
+                            <constraint firstAttribute="bottom" secondItem="hXB-Mv-0eq" secondAttribute="bottom" id="Lrb-wM-lFQ"/>
+                            <constraint firstItem="hXB-Mv-0eq" firstAttribute="centerX" secondItem="geB-oW-HfI" secondAttribute="centerX" id="TZ8-IX-JzB"/>
+                            <constraint firstItem="hXB-Mv-0eq" firstAttribute="top" secondItem="I4c-HG-zFx" secondAttribute="bottom" constant="20" id="svZ-Dz-J75"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результат" id="Lo5-bO-2le"/>
+                    <connections>
+                        <outlet property="recordLabel" destination="dnZ-Sz-dOm" id="yxZ-Cz-hYZ"/>
+                        <outlet property="resultButton" destination="QBt-HN-1iB" id="P1O-dZ-E8Q"/>
+                        <outlet property="stickerImage" destination="I4c-HG-zFx" id="jdq-wi-eXr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUG-Ib-bpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3874.8837209302324" y="0.64377682403433478"/>
         </scene>
         <!--Играть-->
         <scene sceneID="wA1-7L-weJ">
@@ -691,10 +769,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image 6" width="630" height="630"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <image name="globe.americas" catalog="system" width="128" height="123"/>
+        <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
         <image name="globe.badge.chevron.backward" catalog="system" width="128" height="114"/>
         <image name="globe.central.south.asia.fill" catalog="system" width="128" height="123"/>
         <image name="globe.europe.africa" catalog="system" width="128" height="123"/>

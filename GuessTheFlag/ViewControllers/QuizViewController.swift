@@ -24,10 +24,19 @@ final class QuizViewController: UIViewController {
     var userChoice: String!
     var scoreCount = 0
     var heartCount = 0
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let recordVC = segue.destination as? ResultScreenViewController? else {
+            return
+        }
+        recordVC?.result = scoreCount
+    }
+    
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
         
         checkAnswer(sender)
@@ -78,7 +87,7 @@ extension QuizViewController {
                     heartCount += 1
                 } else {
                     hearts[heartCount].isHidden = true
-                    showAlert(title: "Проиграно", message: "Ваши баллы: \(scoreCount)")
+                    performSegue(withIdentifier: "showResult", sender: nil)
                 }
                 sender.backgroundColor = .red
                 flagButtons.forEach { button in
