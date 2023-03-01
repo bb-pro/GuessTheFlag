@@ -16,8 +16,6 @@ final class Record {
             if let record = newValue {
                 print("record \(record) was added")
                 defaults.set(record, forKey: "Record")
-            } else {
-                defaults.removeObject(forKey: "Record")
             }
         }
     }
