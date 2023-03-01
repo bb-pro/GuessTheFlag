@@ -17,11 +17,14 @@ class ResultScreenViewController: UIViewController {
     //MARK: - Public Properties
     var result: Int!
     let defaults = UserDefaults.standard
-    
+    var record: Int!
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        recordLabel.text = String(defaults.integer(forKey: "Record"))
         updateUI()
+        
+        
     }
     
     //MARK: - IB Actions
@@ -34,20 +37,23 @@ class ResultScreenViewController: UIViewController {
     //MARK: - Private Methods
 private extension ResultScreenViewController {
     func updateUI() {
-        let recordInt = UserDefaults.standard.integer(forKey: "Record")
+        
+       
         stickerImage.layer.cornerRadius = stickerImage.frame.width / 2
+        
         if result < 10 {
             stickerImage.image = UIImage(named: "Image 6")
         } else {
             stickerImage.image = UIImage(named: "Image 5")
         }
-                
-        if result > recordInt {
+        
+        if result > defaults.integer(forKey: "Record") {
             defaults.set(result, forKey: "Record")
             UserDefaults.standard.synchronize()
+            
         }
-        guard let userResult = result else { return }
-        resultButton.setTitle(String(userResult), for: .normal)
-        recordLabel.text = "\(defaults.integer(forKey: "Record"))"
+        
+        
+        resultButton.setTitle(String(result), for: .normal)
     }
 }
