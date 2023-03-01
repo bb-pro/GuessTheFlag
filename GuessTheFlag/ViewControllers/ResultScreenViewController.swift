@@ -33,6 +33,12 @@ private extension ResultScreenViewController {
     func updateUI() {
         let recordInt = UserDefaults.standard.integer(forKey: "Record")
         stickerImage.layer.cornerRadius = stickerImage.frame.width / 2
+        if result < 10 {
+            stickerImage.image = UIImage(named: "Image 6")
+        } else {
+            stickerImage.image = UIImage(named: "Image 5")
+        }
+        
         
         
         if result > recordInt {
