@@ -17,6 +17,7 @@ final class NavigationScreenViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.addVerticalGradientLayer()
         navigationButtons.forEach { button in
             button.layer.cornerRadius = 15

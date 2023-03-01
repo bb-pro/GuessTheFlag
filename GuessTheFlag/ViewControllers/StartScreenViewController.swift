@@ -13,6 +13,7 @@ final class StartScreenViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     
     override func viewDidLoad() {
+        print(UserDefaults.standard.integer(forKey: "Record"))
         let defaults = UserDefaults.standard
         defaults.set(0, forKey: "Record")
         super.viewDidLoad()
