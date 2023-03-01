@@ -10,21 +10,24 @@ import AVFoundation
 
 final class QuizViewController: UIViewController {
     
+    //MARK: - IB Outlets
     @IBOutlet var flagImage: UIImageView!
     @IBOutlet var flagButtons: [UIButton]!
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var hearts: [UIImageView]!
     
+    //MARK: - Public Properties
     var flags: [String: String]!
-    private var selected: String!
-    
-    var player: AVAudioPlayer!
-    
     var flag: String!
     var userChoice: String!
     var scoreCount = 0
     var heartCount = 0
-   
+    
+    //MARK: - Private Properties
+    private var selected: String!
+    private var player: AVAudioPlayer!
+    
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
@@ -37,6 +40,7 @@ final class QuizViewController: UIViewController {
         recordVC?.result = scoreCount
     }
     
+    //MARK: - IB Actions
     @IBAction func AnswerButtonPressed(_ sender: UIButton) {
         
         checkAnswer(sender)
@@ -48,6 +52,7 @@ final class QuizViewController: UIViewController {
     }
     
 }
+    //MARK: - Private Methods
 extension QuizViewController {
     
     @objc func updateUI() {

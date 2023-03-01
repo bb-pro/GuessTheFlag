@@ -8,12 +8,13 @@
 import UIKit
 
 final class NavigationScreenViewController: UIViewController {
-    
+    //MARK: - IB Outlets
     @IBOutlet var navigationButtons: [UIButton]!
-
+    //MARK: - Private Properties
     private var flags: [String: String]!
     private var regionName: String!
     private let flagManager = FlagManager()
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
@@ -25,7 +26,7 @@ final class NavigationScreenViewController: UIViewController {
         guard let quizVC = segue.destination as? QuizViewController else { return }
         quizVC.flags = flags
         }
-    
+    //MARK: - IB actions
     @IBAction func selectRegionPressed(_ sender: UIButton) {
         guard let buttonTitle = sender.currentTitle else { return }
         regionName = buttonTitle
@@ -38,6 +39,7 @@ final class NavigationScreenViewController: UIViewController {
     }
 }
 
+//MARK: - Private Methods
 private extension NavigationScreenViewController {
     func updateUI(with title: String) {
         switch title {

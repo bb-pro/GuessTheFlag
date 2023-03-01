@@ -8,27 +8,30 @@
 import UIKit
 
 class ResultScreenViewController: UIViewController {
-
+    
+    //MARK: - IB Outlets
     @IBOutlet var stickerImage: UIImageView!
     @IBOutlet var resultButton: UIButton!
     @IBOutlet var recordLabel: UILabel!
     
+    //MARK: - Public Properties
     var result: Int!
     let defaults = UserDefaults.standard
     
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
     
+    //MARK: - IB Actions
     @IBAction func goBack() {
         self.navigationController?.popToRootViewController(animated: true)
 
     }
-    
-    
 }
 
+    //MARK: - Private Methods
 private extension ResultScreenViewController {
     func updateUI() {
         let recordInt = UserDefaults.standard.integer(forKey: "Record")
@@ -38,9 +41,7 @@ private extension ResultScreenViewController {
         } else {
             stickerImage.image = UIImage(named: "Image 5")
         }
-        
-        
-        
+                
         if result > recordInt {
             defaults.set(result, forKey: "Record")
             UserDefaults.standard.synchronize()
