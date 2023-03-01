@@ -17,6 +17,7 @@
 		805C301129AC6F8400702018 /* LearnFlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C301029AC6F8400702018 /* LearnFlagViewController.swift */; };
 		806B40D529A6589500AC9C43 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 806B40D229A6589500AC9C43 /* all.json */; };
 		806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B40D429A6589500AC9C43 /* Flag Manager.swift */; };
+		807B9A6A29AF585100463514 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807B9A6929AF585100463514 /* Record.swift */; };
 		80E6B3F229AE3E4300690F03 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */; };
 		80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */; };
 		80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		805C301029AC6F8400702018 /* LearnFlagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnFlagViewController.swift; sourceTree = "<group>"; };
 		806B40D229A6589500AC9C43 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		806B40D429A6589500AC9C43 /* Flag Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag Manager.swift"; sourceTree = "<group>"; };
+		807B9A6929AF585100463514 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				806B40D229A6589500AC9C43 /* all.json */,
 				806B40D429A6589500AC9C43 /* Flag Manager.swift */,
+				807B9A6929AF585100463514 /* Record.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				80E6B3F229AE3E4300690F03 /* ResultScreenViewController.swift in Sources */,
 				80187D0F29A5E8E300367C6C /* StartScreenViewController.swift in Sources */,
+				807B9A6A29AF585100463514 /* Record.swift in Sources */,
 				80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */,
 				80187D0D29A5E86200367C6C /* Extension.swift in Sources */,
 				806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */,
