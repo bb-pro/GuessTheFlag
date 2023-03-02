@@ -10,10 +10,16 @@ import UIKit
 class CountryListViewController: UITableViewController {
     var countries: [String]!
     var isoCodes: [String]!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? CountryInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        infoVC.country = countries[indexPath.row]
+        infoVC.isoCode = isoCodes[indexPath.row]
+        infoVC.navigationItem.title = self.navigationItem.title
     }
+    
     @IBAction func goBack() {
         self.navigationController?.popToRootViewController(animated: true)
     }
@@ -21,9 +27,7 @@ class CountryListViewController: UITableViewController {
 
 // MARK: - Table view data source
 extension CountryListViewController {
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return countries.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,8 +36,8 @@ extension CountryListViewController {
         content.text = countries[indexPath.row]
         content.image = UIImage(named: isoCodes[indexPath.row])
         content.imageProperties.maximumSize.width = 40
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
-        
         return cell
     }
 }

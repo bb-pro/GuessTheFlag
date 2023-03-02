@@ -270,16 +270,16 @@
         <!--Регион-->
         <scene sceneID="UCV-Wh-ATD">
             <objects>
-                <viewController id="3c9-s3-2kx" customClass="LearnFlagViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3c9-s3-2kx" customClass="CountryInfoViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5X-Km-A05">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-w7-jUT">
-                                <rect key="frame" x="60" y="108.99999999999999" width="310" height="160.66666666666663"/>
+                                <rect key="frame" x="60" y="205" width="310" height="160.66666666666663"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="31u-ea-TBK">
-                                <rect key="frame" x="16" y="334.66666666666669" width="92.666666666666671" height="99"/>
+                                <rect key="frame" x="16" y="430.66666666666669" width="92.666666666666671" height="99.000000000000057"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-uO-wJm">
                                         <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="27"/>
@@ -299,50 +299,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Флаг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmi-AK-vaU">
-                                <rect key="frame" x="187.33333333333334" y="269.66666666666669" width="55.666666666666657" height="28.666666666666686"/>
+                                <rect key="frame" x="187.33333333333334" y="365.66666666666669" width="55.666666666666657" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VN7-nj-mXW">
-                                <rect key="frame" x="72" y="792" width="286" height="96"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  1 из 200  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnS-cc-Xxa">
-                                        <rect key="frame" x="83" y="0.0" width="120.33333333333331" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="oah-Vc-O8s">
-                                        <rect key="frame" x="0.0" y="58" width="286" height="38"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y6-os-KUs">
-                                                <rect key="frame" x="0.0" y="0.0" width="122" height="38"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title=" Предыдущий ">
-                                                    <color key="titleColor" systemColor="linkColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showPreviousFlagTapped" destination="3c9-s3-2kx" eventType="touchUpInside" id="LaY-gs-eUK"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFK-Mb-B5h">
-                                                <rect key="frame" x="159" y="0.0" width="127" height="38"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title=" Следующий "/>
-                                                <connections>
-                                                    <action selector="showNextFlagTapped" destination="3c9-s3-2kx" eventType="touchUpInside" id="anP-ib-nSq"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="l4e-Ie-mrC">
-                                <rect key="frame" x="118.66666666666666" y="334.66666666666669" width="295.33333333333337" height="99"/>
+                                <rect key="frame" x="118.66666666666666" y="430.66666666666669" width="295.33333333333337" height="99.000000000000057"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-JY-Jue">
                                         <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="27"/>
@@ -364,11 +327,9 @@
                         <constraints>
                             <constraint firstItem="l4e-Ie-mrC" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="65" id="3IU-YB-ETq"/>
                             <constraint firstItem="zeP-w7-jUT" firstAttribute="height" secondItem="D5X-Km-A05" secondAttribute="height" multiplier="0.172414" id="6mV-6d-IlD"/>
-                            <constraint firstItem="VN7-nj-mXW" firstAttribute="centerX" secondItem="D5X-Km-A05" secondAttribute="centerX" id="EbW-kR-yvd"/>
                             <constraint firstItem="31u-ea-TBK" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="65" id="HUH-oK-Bjz"/>
                             <constraint firstItem="BRP-VC-drD" firstAttribute="trailing" secondItem="zeP-w7-jUT" secondAttribute="trailing" constant="60" id="NhB-jf-wSI"/>
                             <constraint firstItem="xmi-AK-vaU" firstAttribute="centerX" secondItem="zeP-w7-jUT" secondAttribute="centerX" id="S9K-DN-eCI"/>
-                            <constraint firstItem="BRP-VC-drD" firstAttribute="bottom" secondItem="VN7-nj-mXW" secondAttribute="bottom" constant="10" id="TKu-nQ-kqa"/>
                             <constraint firstItem="zeP-w7-jUT" firstAttribute="leading" secondItem="BRP-VC-drD" secondAttribute="leading" constant="60" id="Uqk-w9-0dH"/>
                             <constraint firstItem="xmi-AK-vaU" firstAttribute="height" secondItem="D5X-Km-A05" secondAttribute="height" multiplier="0.0307346" id="WDB-bB-1ph"/>
                             <constraint firstItem="l4e-Ie-mrC" firstAttribute="leading" secondItem="31u-ea-TBK" secondAttribute="trailing" constant="10" id="Yu1-PE-Pmj"/>
@@ -380,17 +341,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Регион" id="a1i-o2-PeD"/>
                     <connections>
-                        <outlet property="countryLabel" destination="EpJ-JY-Jue" id="0Ex-fX-SSg"/>
-                        <outlet property="flagCountInfoLabel" destination="YnS-cc-Xxa" id="XS9-qe-r7R"/>
-                        <outlet property="flagImage" destination="zeP-w7-jUT" id="gmz-CH-9aM"/>
-                        <outlet property="isoLabel" destination="kRj-Q4-fsD" id="z3d-pB-k7C"/>
-                        <outletCollection property="navigationButtons" destination="FFK-Mb-B5h" collectionClass="NSMutableArray" id="7Ry-QS-yLD"/>
-                        <outletCollection property="navigationButtons" destination="2Y6-os-KUs" collectionClass="NSMutableArray" id="VrP-St-pQb"/>
+                        <outlet property="countryFlag" destination="zeP-w7-jUT" id="0eq-xS-vUJ"/>
+                        <outlet property="countryName" destination="EpJ-JY-Jue" id="NV1-5K-0cN"/>
+                        <outlet property="isoLabel" destination="kRj-Q4-fsD" id="ajQ-uo-eh8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZX-vH-ObS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="1546"/>
+            <point key="canvasLocation" x="2560" y="1546"/>
         </scene>
         <!--Country List View Controller-->
         <scene sceneID="XEP-ZZ-xUc">
@@ -404,10 +362,14 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="country" id="Q1b-8P-7bs">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1b-8P-7bs" id="wVf-lT-5wf">
+                                <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1b-8P-7bs" id="wVf-lT-5wf">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="3c9-s3-2kx" kind="show" identifier="showInfo" id="7nk-cn-2KG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -785,12 +747,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oMR-9R-zDg">
                         <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="labelColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" systemColor="labelColor"/>
+                            <color key="textColor" red="0.24211357950000001" green="0.1855186784" blue="0.32345933319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -11762,9 +11723,6 @@ VgAAAAAAAAAAAAAAAAAKAX0
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -25,6 +25,7 @@
 		80F7E7BC29A48D1500D3CE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F7E7BB29A48D1500D3CE19 /* Assets.xcassets */; };
 		80F7E7BF29A48D1500D3CE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F7E7BD29A48D1500D3CE19 /* LaunchScreen.storyboard */; };
 		80F9388F29B0D386006FB53B /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9388E29B0D386006FB53B /* CountryListViewController.swift */; };
+		80F9389129B0F197006FB53B /* CountryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9389029B0F197006FB53B /* CountryInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		80F7E7BE29A48D1500D3CE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80F7E7C029A48D1500D3CE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80F9388E29B0D386006FB53B /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		80F9389029B0F197006FB53B /* CountryInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				80415A6B29AB8C4900C2F7DC /* SettingsViewController.swift */,
 				80415A7029ABA2F900C2F7DC /* CountriesViewController.swift */,
 				80F9388E29B0D386006FB53B /* CountryListViewController.swift */,
+				80F9389029B0F197006FB53B /* CountryInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				80187D0F29A5E8E300367C6C /* StartScreenViewController.swift in Sources */,
 				807B9A6A29AF585100463514 /* Record.swift in Sources */,
 				80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */,
+				80F9389129B0F197006FB53B /* CountryInfoViewController.swift in Sources */,
 				80187D0D29A5E86200367C6C /* Extension.swift in Sources */,
 				806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */,
 				80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */,
