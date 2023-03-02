@@ -260,7 +260,7 @@
                         <outletCollection property="regionNames" destination="RTp-1p-3Ro" collectionClass="NSMutableArray" id="ecX-yo-ZX8"/>
                         <outletCollection property="regionNames" destination="Q6K-kP-6jp" collectionClass="NSMutableArray" id="bCh-6s-7bd"/>
                         <outletCollection property="regionNames" destination="oK9-od-75V" collectionClass="NSMutableArray" id="GwS-WS-qtF"/>
-                        <segue destination="3c9-s3-2kx" kind="show" identifier="showFlags" id="xLP-VF-A3j"/>
+                        <segue destination="8fG-Yh-VCF" kind="show" identifier="showFlags" id="7OG-CP-M0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHL-Y9-6AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -276,10 +276,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-w7-jUT">
-                                <rect key="frame" x="60" y="205" width="310" height="160.66666666666663"/>
+                                <rect key="frame" x="60" y="108.99999999999999" width="310" height="160.66666666666663"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="31u-ea-TBK">
-                                <rect key="frame" x="16" y="430.66666666666669" width="92.666666666666671" height="99.000000000000057"/>
+                                <rect key="frame" x="16" y="334.66666666666669" width="92.666666666666671" height="99"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-uO-wJm">
                                         <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="27"/>
@@ -299,7 +299,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Флаг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmi-AK-vaU">
-                                <rect key="frame" x="187.33333333333334" y="365.66666666666669" width="55.666666666666657" height="28.666666666666686"/>
+                                <rect key="frame" x="187.33333333333334" y="269.66666666666669" width="55.666666666666657" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -342,7 +342,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="l4e-Ie-mrC">
-                                <rect key="frame" x="118.66666666666666" y="430.66666666666669" width="295.33333333333337" height="99.000000000000057"/>
+                                <rect key="frame" x="118.66666666666666" y="334.66666666666669" width="295.33333333333337" height="99"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-JY-Jue">
                                         <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="27"/>
@@ -390,7 +390,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZX-vH-ObS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805" y="1516"/>
+            <point key="canvasLocation" x="620" y="1546"/>
+        </scene>
+        <!--Country List View Controller-->
+        <scene sceneID="XEP-ZZ-xUc">
+            <objects>
+                <tableViewController id="8fG-Yh-VCF" customClass="CountryListViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oEB-bM-AMa">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="country" id="Q1b-8P-7bs">
+                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q1b-8P-7bs" id="wVf-lT-5wf">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8fG-Yh-VCF" id="x6v-o0-0fP"/>
+                            <outlet property="delegate" destination="8fG-Yh-VCF" id="MJL-zK-b1M"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="BEY-zA-Smp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pn-6Y-MjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="1546"/>
         </scene>
         <!--Выберите регион-->
         <scene sceneID="sBn-NX-Fte">
@@ -11729,6 +11758,9 @@ VgAAAAAAAAAAAAAAAAAKAX0
         </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

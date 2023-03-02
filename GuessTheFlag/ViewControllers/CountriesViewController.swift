@@ -15,6 +15,8 @@ class CountriesViewController: UIViewController {
     
     private var flags: [String: String]!
     private var regionName: String!
+    private var countries: [String] = []
+    private var isoCodes: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +26,12 @@ class CountriesViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let learnFlagVC = segue.destination as? LearnFlagViewController else {
+        guard let countryListVC = segue.destination as? CountryListViewController else {
             return
         }
-        learnFlagVC.flags = flags
-        learnFlagVC.regionName = regionName
+        countryListVC.countries = countries
+        countryListVC.isoCodes = isoCodes
+        countryListVC.navigationItem.title = regionName
     }
     
     @IBAction func regionSelected(_ sender: UIButton) {
@@ -44,15 +47,34 @@ private extension CountriesViewController {
         switch title {
         case "Азия":
             flags = flagManager.asianData
+            flags.forEach { (key, value) in
+                countries.append(key)
+                isoCodes.append(value)
+            }
         case "Америки":
             flags = flagManager.americasData
+            flags.forEach { (key, value) in
+                countries.append(key)
+                isoCodes.append(value)
+            }
         case "Европа":
             flags = flagManager.europeData
+            flags.forEach { (key, value) in
+                countries.append(key)
+                isoCodes.append(value)
+            }
         case "Африка":
             flags = flagManager.africanData
+            flags.forEach { (key, value) in
+                countries.append(key)
+                isoCodes.append(value)
+            }
         default:
             flags = flagManager.allCountries
+            flags.forEach { (key, value) in
+                countries.append(key)
+                isoCodes.append(value)
+            }
         }
-
     }
 }
