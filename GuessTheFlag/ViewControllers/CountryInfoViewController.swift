@@ -17,6 +17,7 @@ class CountryInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        countryFlag.layer.cornerRadius = countryFlag.frame.width / 2
         countryName.text = country
         isoLabel.text = isoCode
         countryFlag.image = UIImage(named: isoCode)
