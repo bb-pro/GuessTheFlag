@@ -47,34 +47,19 @@ private extension CountriesViewController {
         switch title {
         case "Азия":
             flags = flagManager.asianData
-            flags.forEach { (key, value) in
-                countries.append(key)
-                isoCodes.append(value)
-            }
         case "Америки":
             flags = flagManager.americasData
-            flags.forEach { (key, value) in
-                countries.append(key)
-                isoCodes.append(value)
-            }
         case "Европа":
             flags = flagManager.europeData
-            flags.forEach { (key, value) in
-                countries.append(key)
-                isoCodes.append(value)
-            }
         case "Африка":
             flags = flagManager.africanData
-            flags.forEach { (key, value) in
-                countries.append(key)
-                isoCodes.append(value)
-            }
         default:
             flags = flagManager.allCountries
-            flags.forEach { (key, value) in
-                countries.append(key)
-                isoCodes.append(value)
-            }
+        }
+        flags.forEach { (key, value) in
+            countries.append(key)
+            isoCodes.append(value)
         }
     }
+    
 }

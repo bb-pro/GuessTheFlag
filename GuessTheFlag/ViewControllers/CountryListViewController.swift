@@ -15,8 +15,7 @@ class CountryListViewController: UITableViewController {
         super.viewDidLoad()
     }
     @IBAction func goBack() {
-    
-        dismiss(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
