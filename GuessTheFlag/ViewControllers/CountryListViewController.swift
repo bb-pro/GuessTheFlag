@@ -35,7 +35,7 @@ extension CountryListViewController {
         var content = cell.defaultContentConfiguration()
         content.text = countries[indexPath.row]
         content.image = UIImage(named: isoCodes[indexPath.row])
-        content.imageProperties.maximumSize.width = 40
+        content.imageProperties.maximumSize.width = 60
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         return cell

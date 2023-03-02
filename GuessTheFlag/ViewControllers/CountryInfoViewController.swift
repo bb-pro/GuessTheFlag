@@ -17,7 +17,6 @@ class CountryInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer()
         countryName.text = country
         isoLabel.text = isoCode
         countryFlag.image = UIImage(named: isoCode)

@@ -22,12 +22,7 @@ class ResultScreenViewController: UIViewController {
     //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         updateUI()
-        
-
-        
-        
     }
     
     //MARK: - IB Actions
