@@ -14,7 +14,6 @@ final class Record {
         } set {
             let defaults = UserDefaults.standard
             if let record = newValue {
-                print("record \(record) was added")
                 defaults.set(record, forKey: "Record")
             }
         }
