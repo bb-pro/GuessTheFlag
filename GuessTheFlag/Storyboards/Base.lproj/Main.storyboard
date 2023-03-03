@@ -106,14 +106,30 @@
         <!--Рекорды-->
         <scene sceneID="Nax-WP-Y01">
             <objects>
-                <viewController id="bEC-O3-DKN" sceneMemberID="viewController">
+                <viewController id="bEC-O3-DKN" customClass="RecordScreenViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hmG-Pv-AIX">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-gM-aoc">
+                                <rect key="frame" x="20" y="175" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="N18-cy-CcO"/>
                         <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mMk-gM-aoc" firstAttribute="top" secondItem="N18-cy-CcO" secondAttribute="top" constant="20" id="E3M-Xn-v48"/>
+                            <constraint firstItem="N18-cy-CcO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mMk-gM-aoc" secondAttribute="trailing" symbolic="YES" id="pA1-DY-4NS"/>
+                            <constraint firstItem="mMk-gM-aoc" firstAttribute="leading" secondItem="N18-cy-CcO" secondAttribute="leading" constant="20" id="xaL-Cw-2sd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Рекорды" id="1MW-O5-P1H"/>
+                    <connections>
+                        <outlet property="recordLabel" destination="mMk-gM-aoc" id="oY7-k0-zJX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

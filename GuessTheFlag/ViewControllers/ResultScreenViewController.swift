@@ -37,6 +37,7 @@ private extension ResultScreenViewController {
     
     func updateUI() {
        
+        resultButton.setTitle(String(result), for: .normal)
         
         if result > UserDefaults.standard.integer(forKey: "Record") {
             UserDefaults.standard.set(result, forKey: "Record")
