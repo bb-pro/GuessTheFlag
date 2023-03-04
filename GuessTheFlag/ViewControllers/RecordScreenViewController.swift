@@ -13,5 +13,6 @@ class RecordScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         recordLabel.text = String(UserDefaults.standard.integer(forKey: "Record"))
+        view.addVerticalGradientLayer()
     }
 }
