@@ -34,6 +34,13 @@ struct FlagManager {
     let allCountries: [CountriesWithRegions] = parseAll()
     let africanData: [CountriesWithRegions] = parseAfricanCountriesJson()
     
+    let regions: [String] = [
+        "Азия",
+        "Америки",
+        "Европа",
+        "Африка",
+        "Все страны"
+    ]
     private static func parseAsianCountriesJson() -> [CountriesWithRegions] {
         var asianCountries: [CountriesWithRegions] = []
         if let path = Bundle.main.path(forResource: "all", ofType: "json"){
