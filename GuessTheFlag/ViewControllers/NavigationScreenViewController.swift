@@ -11,7 +11,7 @@ final class NavigationScreenViewController: UIViewController {
     //MARK: - IB Outlets
     @IBOutlet var navigationButtons: [UIButton]!
     //MARK: - Private Properties
-    private var flags: [String: String]!
+    private var flags: [CountriesWithRegions]!
     private var regionName: String!
     private let flagManager = FlagManager()
     //MARK: - Override Methods

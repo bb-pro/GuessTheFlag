@@ -13,7 +13,7 @@ class CountriesViewController: UIViewController {
     
     private let flagManager = FlagManager()
     
-    private var flags: [String: String]!
+    private var flags: [CountriesWithRegions]!
     private var regionName: String!
     private var countries: [String] = []
     private var isoCodes: [String] = []
@@ -56,9 +56,9 @@ private extension CountriesViewController {
         default:
             flags = flagManager.allCountries
         }
-        flags.forEach { (key, value) in
-            countries.append(key)
-            isoCodes.append(value)
+        flags.forEach { flag in
+            countries.append(flag.name)
+            isoCodes.append(flag.alpha)
         }
     }
     

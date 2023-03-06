@@ -140,10 +140,10 @@
 				80F7E7B629A48D1300D3CE19 /* QuizViewController.swift */,
 				80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */,
 				80415A6B29AB8C4900C2F7DC /* SettingsViewController.swift */,
+				80F9389229B1DC88006FB53B /* RecordScreenViewController.swift */,
 				80415A7029ABA2F900C2F7DC /* CountriesViewController.swift */,
 				80F9388E29B0D386006FB53B /* CountryListViewController.swift */,
 				80F9389029B0F197006FB53B /* CountryInfoViewController.swift */,
-				80F9389229B1DC88006FB53B /* RecordScreenViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

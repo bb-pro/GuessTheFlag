@@ -17,7 +17,7 @@ final class QuizViewController: UIViewController {
     @IBOutlet var hearts: [UIImageView]!
     
     //MARK: - Public Properties
-    var flags: [String: String]!
+    var flags: [CountriesWithRegions]!
     var flag: String!
     var userChoice: String!
     var scoreCount = 0
@@ -61,16 +61,21 @@ extension QuizViewController {
             button.backgroundColor = .lightGray
         }
         
-        var answers: [String: String] = [:]
+        var answers: [CountriesWithRegions] = []
         
-        for (button, answer) in zip(flagButtons, flags.shuffled()) {
-            button.setTitle(answer.key, for: .normal)
-            answers[answer.key] = answer.value
+        for _ in 1...4 {
+            if let answer = flags.randomElement() {
+                answers.append(answer)
+            }
+        }
+        
+        for (button, answer) in zip(flagButtons, answers.shuffled()) {
+            button.setTitle(answer.name, for: .normal)
         }
         
         if let correctAnswer = answers.randomElement() {
-            flag = correctAnswer.key
-            flagImage.image = UIImage(named: correctAnswer.value.lowercased())
+            flagImage.image = UIImage(named: correctAnswer.alpha.lowercased())
+            flag = correctAnswer.name
         }
         
         flagButtons.forEach { button in
