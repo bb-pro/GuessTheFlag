@@ -228,7 +228,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ee-PO-HOY">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-w7-jUT">
                                 <rect key="frame" x="115" y="205" width="200" height="200"/>
@@ -614,7 +614,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Oi-UX-P55"/>
-                        <color key="backgroundColor" red="0.74831370919999995" green="0.57339274679999996" blue="0.99973348839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="I4c-HG-zFx" firstAttribute="top" secondItem="3Oi-UX-P55" secondAttribute="top" constant="50" id="FWl-CZ-I6E"/>
                             <constraint firstItem="I4c-HG-zFx" firstAttribute="centerX" secondItem="geB-oW-HfI" secondAttribute="centerX" id="JI0-GZ-78K"/>

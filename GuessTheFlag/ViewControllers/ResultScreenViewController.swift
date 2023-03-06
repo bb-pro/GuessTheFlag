@@ -24,6 +24,9 @@ class ResultScreenViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
     }
+    override func viewDidLayoutSubviews() {
+        view.backgroundColor = .secondaryLabel
+    }
     
     //MARK: - IB Actions
     @IBAction func goBack() {
@@ -36,9 +39,9 @@ class ResultScreenViewController: UIViewController {
 private extension ResultScreenViewController {
     
     func updateUI() {
-        
+        navigationItem.hidesBackButton = true
         resultButton.setTitle(String(result), for: .normal)
-        
+        stickerImage.layer.cornerRadius = stickerImage.frame.width / 2
         if result > UserDefaults.standard.integer(forKey: "Record") {
             UserDefaults.standard.set(result, forKey: "Record")
         }
