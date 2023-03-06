@@ -51,7 +51,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Wdr-jR-Jng" kind="show" id="JhU-er-zsw"/>
+                                            <segue destination="a4O-0E-rrS" kind="show" id="8Xt-Nh-NxK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmD-jj-dS3">
@@ -82,7 +82,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGA-u4-jUX"/>
-                        <color key="backgroundColor" red="0.74851319666477112" green="0.57354560333805238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="bGA-u4-jUX" firstAttribute="bottom" secondItem="3jn-d2-0pU" secondAttribute="bottom" constant="50" id="8QL-f5-2gL"/>
                             <constraint firstItem="3jn-d2-0pU" firstAttribute="leading" secondItem="bGA-u4-jUX" secondAttribute="leading" constant="40" id="Eu7-vh-rTQ"/>
@@ -97,6 +97,7 @@
                         <outletCollection property="buttons" destination="VM7-mq-Bbv" collectionClass="NSMutableArray" id="F6u-OB-HQV"/>
                         <outletCollection property="buttons" destination="PmD-jj-dS3" collectionClass="NSMutableArray" id="csu-zv-8qu"/>
                         <outletCollection property="buttons" destination="BND-g4-DrQ" collectionClass="NSMutableArray" id="6M3-2r-u8i"/>
+                        <outletCollection property="buttons" destination="A7K-CT-RT1" collectionClass="NSMutableArray" id="lIM-WW-5Ss"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRq-2D-01X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -134,6 +135,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8n-e1-YVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2365" y="811"/>
+        </scene>
+        <!--Выберите регион-->
+        <scene sceneID="Isd-c7-gIu">
+            <objects>
+                <tableViewController id="a4O-0E-rrS" customClass="RegionsTableViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Stq-lf-XzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="regionCell" id="WzZ-QB-Pm5">
+                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WzZ-QB-Pm5" id="Ve0-nQ-kGh">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a4O-0E-rrS" id="UUX-Mt-dol"/>
+                            <outlet property="delegate" destination="a4O-0E-rrS" id="UsS-TW-kRm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Выберите регион" id="Fk1-Xo-m5F"/>
+                    <connections>
+                        <segue destination="8fG-Yh-VCF" kind="show" identifier="showCountries" id="40O-XD-EF2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Uv-8M-7Ab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="796"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="8fu-UY-TSh">
@@ -185,104 +218,6 @@
             </objects>
             <point key="canvasLocation" x="1578" y="811"/>
         </scene>
-        <!--Выберите регион-->
-        <scene sceneID="ftB-NO-NwA">
-            <objects>
-                <viewController id="Wdr-jR-Jng" customClass="CountriesViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uxi-FG-whi">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="szQ-iv-3Ck">
-                                <rect key="frame" x="40" y="289" width="350" height="569"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2d-Y2-LGg">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="97.666666666666671"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Азия" image="globe.central.south.asia.fill" catalog="system">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="CSi-j6-eaM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-32-fvS">
-                                        <rect key="frame" x="0.0" y="117.66666666666669" width="350" height="98"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Америки" image="globe.americas" catalog="system">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="gyP-21-j5A"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTp-1p-3Ro">
-                                        <rect key="frame" x="0.0" y="235.6666666666666" width="350" height="97.666666666666657"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Европа" image="globe.europe.africa.fill" catalog="system">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="PSj-Za-8hh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6K-kP-6jp">
-                                        <rect key="frame" x="0.0" y="353.33333333333337" width="350" height="98"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Африка" image="globe.europe.africa" catalog="system">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="aPS-aA-A67"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK9-od-75V">
-                                        <rect key="frame" x="0.0" y="471.33333333333343" width="350" height="97.666666666666686"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Все страны" image="globe" catalog="system">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="regionSelected:" destination="Wdr-jR-Jng" eventType="touchUpInside" id="OV8-MV-9kI"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="zE1-EV-2vM"/>
-                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zE1-EV-2vM" firstAttribute="trailing" secondItem="szQ-iv-3Ck" secondAttribute="trailing" constant="40" id="GCf-4B-Pmw"/>
-                            <constraint firstItem="zE1-EV-2vM" firstAttribute="bottom" secondItem="szQ-iv-3Ck" secondAttribute="bottom" constant="40" id="LXC-W6-AuF"/>
-                            <constraint firstItem="szQ-iv-3Ck" firstAttribute="centerX" secondItem="Uxi-FG-whi" secondAttribute="centerX" id="ffM-yS-dvp"/>
-                            <constraint firstItem="szQ-iv-3Ck" firstAttribute="top" secondItem="zE1-EV-2vM" secondAttribute="top" constant="134" id="lEm-sm-rxR"/>
-                            <constraint firstItem="szQ-iv-3Ck" firstAttribute="leading" secondItem="zE1-EV-2vM" secondAttribute="leading" constant="40" id="neq-8y-6GP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Выберите регион" id="mw9-Dp-vJv"/>
-                    <connections>
-                        <outletCollection property="regionNames" destination="d2d-Y2-LGg" collectionClass="NSMutableArray" id="41w-Zn-G3x"/>
-                        <outletCollection property="regionNames" destination="c4W-32-fvS" collectionClass="NSMutableArray" id="X06-2W-i3f"/>
-                        <outletCollection property="regionNames" destination="RTp-1p-3Ro" collectionClass="NSMutableArray" id="ecX-yo-ZX8"/>
-                        <outletCollection property="regionNames" destination="Q6K-kP-6jp" collectionClass="NSMutableArray" id="bCh-6s-7bd"/>
-                        <outletCollection property="regionNames" destination="oK9-od-75V" collectionClass="NSMutableArray" id="GwS-WS-qtF"/>
-                        <segue destination="8fG-Yh-VCF" kind="show" identifier="showFlags" id="7OG-CP-M0s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QHL-Y9-6AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="804" y="811"/>
-        </scene>
         <!--Регион-->
         <scene sceneID="UCV-Wh-ATD">
             <objects>
@@ -291,8 +226,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="8ee-PO-HOY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ee-PO-HOY">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-w7-jUT">
                                 <rect key="frame" x="115" y="205" width="200" height="200"/>
@@ -366,7 +302,7 @@
             </objects>
             <point key="canvasLocation" x="1621" y="1548"/>
         </scene>
-        <!--Country List View Controller-->
+        <!--Страны-->
         <scene sceneID="XEP-ZZ-xUc">
             <objects>
                 <tableViewController id="8fG-Yh-VCF" customClass="CountryListViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
@@ -393,10 +329,10 @@
                             <outlet property="delegate" destination="8fG-Yh-VCF" id="MJL-zK-b1M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BEY-zA-Smp">
-                        <barButtonItem key="leftBarButtonItem" title="Выйти" id="KHn-6e-5Mv">
+                    <navigationItem key="navigationItem" title="Страны" id="BEY-zA-Smp">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="aWI-ap-zHT">
                             <connections>
-                                <action selector="goBack" destination="8fG-Yh-VCF" id="sXl-ie-4sr"/>
+                                <action selector="goBack" destination="8fG-Yh-VCF" id="KcN-BL-zPu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -405,7 +341,7 @@
             </objects>
             <point key="canvasLocation" x="805" y="1548"/>
         </scene>
-        <!--Region List View Controller-->
+        <!--Выберите регион-->
         <scene sceneID="YsH-2W-693">
             <objects>
                 <tableViewController id="ogM-O4-L0X" customClass="RegionListViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
@@ -414,12 +350,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="regionCell" id="tms-Mm-eX4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="regionCell" editingAccessoryType="detailButton" textLabel="bg0-Rz-4XJ" style="IBUITableViewCellStyleDefault" id="tms-Mm-eX4">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tms-Mm-eX4" id="GQQ-4I-2y1">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bg0-Rz-4XJ">
+                                            <rect key="frame" x="20" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -428,7 +373,10 @@
                             <outlet property="delegate" destination="ogM-O4-L0X" id="MDD-OQ-aSi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="urW-5b-QSd"/>
+                    <navigationItem key="navigationItem" title="Выберите регион" id="urW-5b-QSd"/>
+                    <connections>
+                        <segue destination="fuY-me-IJb" kind="show" identifier="goToQuiz" id="Bne-BR-hRf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MH-nA-Pdw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -443,18 +391,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fur-TA-OK2">
-                                <rect key="frame" x="83.666666666666657" y="198" width="262.66666666666674" height="140"/>
+                                <rect key="frame" x="83.666666666666657" y="294" width="262.66666666666674" height="140"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-b4-H0a">
-                                <rect key="frame" x="20" y="388" width="390" height="460"/>
+                                <rect key="frame" x="20" y="484" width="390" height="364"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-A8-tmM" userLabel="Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="107.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="83.666666666666671"/>
+                                        <color key="backgroundColor" red="0.25198139559999999" green="0.40132267939999999" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="tintColor" red="0.54503712559999995" green="0.31432738440000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.66114252809999996" green="0.48742371800000001" blue="0.66092371940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                             <color key="titleShadowColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -462,36 +411,36 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAM-P7-SmN">
-                                        <rect key="frame" x="0.0" y="117.66666666666669" width="390" height="107.33333333333331"/>
-                                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="93.666666666666629" width="390" height="83.333333333333314"/>
+                                        <color key="backgroundColor" red="0.25198139559999999" green="0.40132267939999999" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.66114252809999996" green="0.48742371800000001" blue="0.66092371940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="AnswerButtonPressed:" destination="fuY-me-IJb" eventType="touchUpInside" id="rLJ-bf-bT2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEL-J2-P93">
-                                        <rect key="frame" x="0.0" y="234.99999999999997" width="390" height="107.66666666666666"/>
-                                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="187" width="390" height="83.666666666666686"/>
+                                        <color key="backgroundColor" red="0.25198139559999999" green="0.40132267939999999" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.66114252809999996" green="0.48742371800000001" blue="0.66092371940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="AnswerButtonPressed:" destination="fuY-me-IJb" eventType="touchUpInside" id="65B-aD-42J"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-Ww-w41">
-                                        <rect key="frame" x="0.0" y="352.66666666666663" width="390" height="107.33333333333331"/>
-                                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="280.66666666666663" width="390" height="83.333333333333314"/>
+                                        <color key="backgroundColor" red="0.25198139559999999" green="0.40132267939999999" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.66114252809999996" green="0.48742371800000001" blue="0.66092371940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="AnswerButtonPressed:" destination="fuY-me-IJb" eventType="touchUpInside" id="dH0-2C-n9Y"/>
@@ -500,13 +449,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баллы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-7D-2eD">
-                                <rect key="frame" x="19.999999999999996" y="79" width="63.666666666666657" height="24"/>
+                                <rect key="frame" x="19.999999999999996" y="175" width="63.666666666666657" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQI-sX-1iv">
-                                <rect key="frame" x="103.66666666666667" y="79" width="13" height="25.333333333333329"/>
+                                <rect key="frame" x="103.66666666666667" y="175" width="13" height="25.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -518,13 +467,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Попытки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBx-Mm-puH">
-                                <rect key="frame" x="20" y="115" width="85" height="25.333333333333343"/>
+                                <rect key="frame" x="20" y="211" width="85" height="25.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fiQ-bH-5Io">
-                                <rect key="frame" x="116" y="108" width="100" height="40"/>
+                                <rect key="frame" x="116" y="204" width="100" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-DK-oCi">
                                         <rect key="frame" x="0.0" y="-1.6666666666666679" width="19.333333333333332" height="44.666666666666671"/>
@@ -564,7 +513,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zna-0g-WY9"/>
-                        <color key="backgroundColor" red="0.74851319670000005" green="0.57354560330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="hTQ-7D-2eD" firstAttribute="top" secondItem="Zna-0g-WY9" secondAttribute="top" constant="20" id="0Ta-70-WEy"/>
                             <constraint firstItem="tBx-Mm-puH" firstAttribute="leading" secondItem="Zna-0g-WY9" secondAttribute="leading" constant="20" id="8cB-fw-OLt"/>
@@ -613,14 +562,14 @@
             <objects>
                 <viewController id="1Eg-c8-MnZ" customClass="ResultScreenViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="geB-oW-HfI">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hXB-Mv-0eq">
-                                <rect key="frame" x="104.00000000000001" y="329" width="222.33333333333337" height="534"/>
+                                <rect key="frame" x="104.00000000000001" y="425" width="222.33333333333337" height="507"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBt-HN-1iB">
-                                        <rect key="frame" x="0.0" y="0.0" width="222.33333333333334" height="164.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="222.33333333333334" height="155.66666666666666"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -630,16 +579,16 @@
                                         </state>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3x-P0-M40">
-                                        <rect key="frame" x="0.0" y="184.66666666666663" width="222.33333333333334" height="164.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="175.66666666666663" width="222.33333333333334" height="155.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекорд" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="261-OD-kmU">
-                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="164.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="155.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnZ-Sz-dOm">
-                                                <rect key="frame" x="119.66666666666666" y="0.0" width="102.66666666666666" height="164.66666666666666"/>
+                                                <rect key="frame" x="119.66666666666666" y="0.0" width="102.66666666666666" height="155.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -647,7 +596,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buh-aX-TKP">
-                                        <rect key="frame" x="0.0" y="369.33333333333337" width="222.33333333333334" height="164.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="351.33333333333337" width="222.33333333333334" height="155.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="На главный экран"/>
                                         <connections>
@@ -657,7 +606,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 6" translatesAutoresizingMaskIntoConstraints="NO" id="I4c-HG-zFx">
-                                <rect key="frame" x="115" y="109" width="200" height="200"/>
+                                <rect key="frame" x="115" y="205" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Lck-Ol-mWI"/>
                                     <constraint firstAttribute="width" constant="200" id="iMI-N3-o1b"/>
@@ -694,12 +643,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oMR-9R-zDg">
                         <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.24211357950000001" green="0.1855186784" blue="0.32345933319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -713,17 +661,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1080" height="2339"/>
         <image name="Image 6" width="630" height="630"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
         <image name="gear" catalog="system" width="128" height="122"/>
-        <image name="globe" catalog="system" width="128" height="123"/>
-        <image name="globe.americas" catalog="system" width="128" height="123"/>
         <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
         <image name="globe.badge.chevron.backward" catalog="system" width="128" height="114"/>
         <image name="globe.central.south.asia.fill" catalog="system" width="128" height="123"/>
-        <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
-        <image name="globe.europe.africa.fill" catalog="system" width="128" height="123"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="medal" catalog="system" width="121" height="128"/>
         <image name="play" catalog="system" width="117" height="128"/>
@@ -11672,11 +11615,17 @@ VgAAAAAAAAAAAAAAAAAKAX0
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

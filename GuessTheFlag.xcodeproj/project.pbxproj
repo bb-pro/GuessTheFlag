@@ -12,11 +12,11 @@
 		80259E4429A7B09900037EBD /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80259E4329A7B09900037EBD /* A.wav */; };
 		80259E4629A7B4BC00037EBD /* E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80259E4529A7B4BC00037EBD /* E.mp3 */; };
 		80415A6C29AB8C4900C2F7DC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80415A6B29AB8C4900C2F7DC /* SettingsViewController.swift */; };
-		80415A7129ABA2F900C2F7DC /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80415A7029ABA2F900C2F7DC /* CountriesViewController.swift */; };
 		806B40D529A6589500AC9C43 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 806B40D229A6589500AC9C43 /* all.json */; };
 		806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B40D429A6589500AC9C43 /* Flag Manager.swift */; };
 		807B9A6A29AF585100463514 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807B9A6929AF585100463514 /* Record.swift */; };
 		80BB1E6529B5CD3D00F76FC0 /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1E6429B5CD3D00F76FC0 /* RegionListViewController.swift */; };
+		80BB1E6729B60FD500F76FC0 /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1E6629B60FD500F76FC0 /* RegionsTableViewController.swift */; };
 		80E6B3F229AE3E4300690F03 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */; };
 		80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */; };
 		80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7E7B429A48D1300D3CE19 /* SceneDelegate.swift */; };
@@ -36,11 +36,11 @@
 		80259E4529A7B4BC00037EBD /* E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E.mp3; sourceTree = "<group>"; };
 		80415A6B29AB8C4900C2F7DC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		80415A6E29ABA04E00C2F7DC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		80415A7029ABA2F900C2F7DC /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		806B40D229A6589500AC9C43 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		806B40D429A6589500AC9C43 /* Flag Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag Manager.swift"; sourceTree = "<group>"; };
 		807B9A6929AF585100463514 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		80BB1E6429B5CD3D00F76FC0 /* RegionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
+		80BB1E6629B60FD500F76FC0 /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
 		80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
 		80F7E7AF29A48D1300D3CE19 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F7E7B229A48D1300D3CE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */,
 				80415A6B29AB8C4900C2F7DC /* SettingsViewController.swift */,
 				80F9389229B1DC88006FB53B /* RecordScreenViewController.swift */,
-				80415A7029ABA2F900C2F7DC /* CountriesViewController.swift */,
+				80BB1E6629B60FD500F76FC0 /* RegionsTableViewController.swift */,
 				80F9388E29B0D386006FB53B /* CountryListViewController.swift */,
 				80F9389029B0F197006FB53B /* CountryInfoViewController.swift */,
 			);
@@ -245,13 +245,13 @@
 				80E6B3F229AE3E4300690F03 /* ResultScreenViewController.swift in Sources */,
 				80F9388F29B0D386006FB53B /* CountryListViewController.swift in Sources */,
 				80187D0F29A5E8E300367C6C /* StartScreenViewController.swift in Sources */,
+				80BB1E6729B60FD500F76FC0 /* RegionsTableViewController.swift in Sources */,
 				807B9A6A29AF585100463514 /* Record.swift in Sources */,
 				80F7E7B729A48D1300D3CE19 /* QuizViewController.swift in Sources */,
 				80F9389129B0F197006FB53B /* CountryInfoViewController.swift in Sources */,
 				80187D0D29A5E86200367C6C /* Extension.swift in Sources */,
 				806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */,
 				80F7E7B329A48D1300D3CE19 /* AppDelegate.swift in Sources */,
-				80415A7129ABA2F900C2F7DC /* CountriesViewController.swift in Sources */,
 				80F9389329B1DC88006FB53B /* RecordScreenViewController.swift in Sources */,
 				80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */,
 				80415A6C29AB8C4900C2F7DC /* SettingsViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  RegionListViewController.swift
+//  RegionsTableViewController.swift
 //  GuessTheFlag
 //
 //  Created by Bektemur Mamashayev on 06/03/23.
@@ -7,18 +7,21 @@
 
 import UIKit
 
-class RegionListViewController: UITableViewController {
+final class RegionsTableViewController: UITableViewController {
     private let flagManager = FlagManager()
     private var flags: [CountriesWithRegions]!
     private var regionName: String!
+    private var countries: [String] = []
+    private var isoCodes: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let quizVC = segue.destination as? QuizViewController else { return }
-        quizVC.flags = flags
-        quizVC.navigationItem.title = regionName
+        guard let countryListVC = segue.destination as? CountryListViewController else { return }
+        
+        countryListVC.countries = countries
+        countryListVC.isoCodes = isoCodes
     }
 
     
@@ -26,7 +29,7 @@ class RegionListViewController: UITableViewController {
    
 }
 // MARK: - Table view data source
-extension RegionListViewController {
+extension RegionsTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         1
     }
@@ -36,6 +39,7 @@ extension RegionListViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "regionCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.image = UIImage(named: flagManager.regions[indexPath.section])
+        content.text = flagManager.description[indexPath.section]
         cell.contentConfiguration = content
         
         return cell
@@ -60,7 +64,7 @@ extension RegionListViewController {
     }
 }
 //MARK: - UITableViewDelegate
-extension RegionListViewController {
+extension RegionsTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0: flags = flagManager.asianData
@@ -71,10 +75,15 @@ extension RegionListViewController {
             flags = flagManager.allCountries
         }
         regionName = flagManager.regions[indexPath.section]
-        performSegue(withIdentifier: "goToQuiz", sender: nil)
+        flags.forEach { flag in
+            countries.append(flag.name)
+            isoCodes.append(flag.alpha.lowercased())
+        }
+        performSegue(withIdentifier: "showCountries", sender: nil)
     }
 }
 
 extension RegionListViewController {
   
 }
+

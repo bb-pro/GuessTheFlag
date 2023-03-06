@@ -28,6 +28,14 @@ struct CountriesWithRegions: Decodable {
 
 struct FlagManager {
     
+    let description = [
+        "А́зия — крупнейшая часть света, как по территории, так и по численности населения и его плотности.",
+        "Аме́рика — часть света, объединяющая два материка, Северную и Южную Америки.",
+        "Евро́па — часть света в Северном полушарии, имеющая площадь около 10,3 млн км².",
+        "А́фрика — второй по площади материк после Евразии.",
+        "Вся планета Земла"
+                       ]
+    
     let asianData: [CountriesWithRegions] = parseAsianCountriesJson()
     let americasData: [CountriesWithRegions] = parseAmericanCountriesJson()
     let europeData: [CountriesWithRegions] = parseEuropeCountriesJson()

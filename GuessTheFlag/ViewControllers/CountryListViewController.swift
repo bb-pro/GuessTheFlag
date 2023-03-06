@@ -11,7 +11,9 @@ class CountryListViewController: UITableViewController {
     var countries: [String]!
     var isoCodes: [String]!
   
-  
+    override func viewDidLoad() {
+        navigationItem.hidesBackButton = true
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let infoVC = segue.destination as? CountryInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }

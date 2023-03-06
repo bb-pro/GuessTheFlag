@@ -16,7 +16,6 @@ final class StartScreenViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(0, forKey: "Record")
         super.viewDidLoad()
-        view.addVerticalGradientLayer()
         buttons.forEach { button in
             button.layer.cornerRadius = 15
         }
