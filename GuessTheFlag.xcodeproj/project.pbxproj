@@ -15,6 +15,7 @@
 		806B40D529A6589500AC9C43 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 806B40D229A6589500AC9C43 /* all.json */; };
 		806B40D729A6589500AC9C43 /* Flag Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B40D429A6589500AC9C43 /* Flag Manager.swift */; };
 		807B9A6A29AF585100463514 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807B9A6929AF585100463514 /* Record.swift */; };
+		80A312A829B757D4001195A2 /* RegionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A312A729B757D3001195A2 /* RegionCell.swift */; };
 		80BB1E6529B5CD3D00F76FC0 /* RegionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1E6429B5CD3D00F76FC0 /* RegionListViewController.swift */; };
 		80BB1E6729B60FD500F76FC0 /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1E6629B60FD500F76FC0 /* RegionsTableViewController.swift */; };
 		80E6B3F229AE3E4300690F03 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */; };
@@ -39,6 +40,7 @@
 		806B40D229A6589500AC9C43 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
 		806B40D429A6589500AC9C43 /* Flag Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flag Manager.swift"; sourceTree = "<group>"; };
 		807B9A6929AF585100463514 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		80A312A729B757D3001195A2 /* RegionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionCell.swift; sourceTree = "<group>"; };
 		80BB1E6429B5CD3D00F76FC0 /* RegionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListViewController.swift; sourceTree = "<group>"; };
 		80BB1E6629B60FD500F76FC0 /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
 		80E6B3F129AE3E4300690F03 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		80A312A629B757BB001195A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80A312A729B757D3001195A2 /* RegionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		80F7E7A629A48D1300D3CE19 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		80F7E7B129A48D1300D3CE19 /* GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
+				80A312A629B757BB001195A2 /* Views */,
 				80F7E7C629A48D4D00D3CE19 /* App */,
 				80F7E7C929A491FE00D3CE19 /* Models */,
 				80F7E7C729A48DD100D3CE19 /* ViewControllers */,
@@ -255,6 +266,7 @@
 				80F9389329B1DC88006FB53B /* RecordScreenViewController.swift in Sources */,
 				80F7E7B529A48D1300D3CE19 /* SceneDelegate.swift in Sources */,
 				80415A6C29AB8C4900C2F7DC /* SettingsViewController.swift in Sources */,
+				80A312A829B757D4001195A2 /* RegionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
