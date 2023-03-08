@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-final class QuizViewController: UIViewController {
+class QuizViewController: UIViewController {
     
     //MARK: - IB Outlets
     @IBOutlet var flagImage: UIImageView!
