@@ -358,9 +358,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="fuY-me-IJb" kind="show" identifier="goToQuiz" id="vN2-vv-S56"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -369,6 +366,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Выберите регион" id="urW-5b-QSd"/>
+                    <connections>
+                        <segue destination="fuY-me-IJb" kind="show" identifier="goToQuiz" id="vQP-qb-vfg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MH-nA-Pdw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

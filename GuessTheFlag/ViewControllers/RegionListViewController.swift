@@ -71,6 +71,8 @@ extension RegionListViewController {
             flags = flagManager.allCountries
         }
         regionName = flagManager.regions[indexPath.section]
+        print(flags)
+        print(regionName)
         performSegue(withIdentifier: "goToQuiz", sender: nil)
     }
 }

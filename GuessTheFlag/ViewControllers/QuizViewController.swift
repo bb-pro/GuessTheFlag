@@ -72,6 +72,7 @@ extension QuizViewController {
         }
         
         for (button, answer) in zip(flagButtons, answers.shuffled()) {
+            
             button.setTitle(answer.name, for: .normal)
         }
         
