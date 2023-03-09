@@ -21,13 +21,15 @@ final class StartScreenViewController: UIViewController {
         buttons.forEach { button in
             button.layer.cornerRadius = 15
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 0.6) {
-            self.image.transform = CGAffineTransform(scaleX: 2, y: 2)
+        UIView.animate(withDuration: 1.5) {
+            self.image.frame.origin.x += 100
+            
+            for button in self.buttons {
+                button.frame.origin.x -= 100
+            }
         }
     }
+    
 
 }
 

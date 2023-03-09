@@ -20,5 +20,9 @@ class CountryInfoViewController: UIViewController {
         countryName.text = country
         isoLabel.text = isoCode
         countryFlag.image = UIImage(named: isoCode)
+        
+        UIView.animate(withDuration: 1.6) {
+            self.countryFlag.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }
     }
 }

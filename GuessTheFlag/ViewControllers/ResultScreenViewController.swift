@@ -23,6 +23,9 @@ class ResultScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        UIView.animate(withDuration: 1.5) {
+            self.stickerImage.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }
     }
     override func viewDidLayoutSubviews() {
         view.backgroundColor = .secondaryLabel

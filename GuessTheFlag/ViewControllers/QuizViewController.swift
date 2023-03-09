@@ -32,7 +32,12 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
         updateUI()
-        
+        UIView.animate(withDuration: 1.6) {
+            self.flagImage.frame.origin.x -= 100
+            self.flagButtons.forEach { button in
+                button.frame.origin.x += 100
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

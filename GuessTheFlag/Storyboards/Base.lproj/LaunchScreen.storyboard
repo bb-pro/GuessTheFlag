@@ -34,9 +34,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uz" translatesAutoresizingMaskIntoConstraints="NO" id="hoD-x3-GsQ">
-                                <rect key="frame" x="77.333333333333343" y="193.33333333333337" width="275.33333333333326" height="179"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,16 +41,12 @@
                             <constraint firstItem="8nv-no-o6v" firstAttribute="top" secondItem="ouQ-yD-Afl" secondAttribute="bottom" constant="20" id="M5W-ng-H9w"/>
                             <constraint firstItem="C09-wn-NJh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="U7v-DY-O9B"/>
                             <constraint firstItem="ouQ-yD-Afl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bIQ-oO-lkO"/>
-                            <constraint firstItem="hoD-x3-GsQ" firstAttribute="width" secondItem="C09-wn-NJh" secondAttribute="width" multiplier="0.64" id="d7R-eq-mgB"/>
                             <constraint firstItem="C09-wn-NJh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fIO-wC-uwr"/>
                             <constraint firstItem="8nv-no-o6v" firstAttribute="centerX" secondItem="ouQ-yD-Afl" secondAttribute="centerX" id="guP-YQ-Rps"/>
-                            <constraint firstItem="ouQ-yD-Afl" firstAttribute="top" secondItem="hoD-x3-GsQ" secondAttribute="bottom" constant="30" id="iGT-nd-xVl"/>
                             <constraint firstItem="8nv-no-o6v" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.452926" id="kSJ-kx-xOY"/>
                             <constraint firstItem="C09-wn-NJh" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="mPG-C2-8zi"/>
                             <constraint firstItem="C09-wn-NJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mvz-u3-EOS"/>
-                            <constraint firstItem="hoD-x3-GsQ" firstAttribute="height" secondItem="C09-wn-NJh" secondAttribute="height" multiplier="0.191904" id="rWP-ox-pQH"/>
                             <constraint firstItem="ouQ-yD-Afl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uuM-cb-OH7"/>
-                            <constraint firstItem="hoD-x3-GsQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vNW-Zs-T2r"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -65,7 +58,6 @@
     <resources>
         <image name="Image" width="1080" height="2339"/>
         <image name="globe.desk" catalog="system" width="115" height="128"/>
-        <image name="uz" width="2560" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

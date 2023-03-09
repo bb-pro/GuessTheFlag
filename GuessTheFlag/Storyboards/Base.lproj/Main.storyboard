@@ -239,7 +239,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="31u-ea-TBK">
-                                <rect key="frame" x="16" y="469.99999999999994" width="92.666666666666671" height="94.333333333333314"/>
+                                <rect key="frame" x="16" y="555" width="92.666666666666671" height="94.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-uO-wJm">
                                         <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="24.666666666666668"/>
@@ -259,7 +259,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="l4e-Ie-mrC">
-                                <rect key="frame" x="118.66666666666666" y="470" width="295.33333333333337" height="99"/>
+                                <rect key="frame" x="118.66666666666666" y="555" width="295.33333333333337" height="99"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-JY-Jue">
                                         <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="27"/>
@@ -279,8 +279,8 @@
                         <viewLayoutGuide key="safeArea" id="BRP-VC-drD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="l4e-Ie-mrC" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="65" id="3IU-YB-ETq"/>
-                            <constraint firstItem="31u-ea-TBK" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="65" id="HUH-oK-Bjz"/>
+                            <constraint firstItem="l4e-Ie-mrC" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="150" id="3IU-YB-ETq"/>
+                            <constraint firstItem="31u-ea-TBK" firstAttribute="top" secondItem="zeP-w7-jUT" secondAttribute="bottom" constant="150" id="HUH-oK-Bjz"/>
                             <constraint firstAttribute="bottom" secondItem="8ee-PO-HOY" secondAttribute="bottom" id="Ijt-aO-3hY"/>
                             <constraint firstItem="8ee-PO-HOY" firstAttribute="trailing" secondItem="BRP-VC-drD" secondAttribute="trailing" id="Nzf-L7-9Ir"/>
                             <constraint firstItem="l4e-Ie-mrC" firstAttribute="leading" secondItem="31u-ea-TBK" secondAttribute="trailing" constant="10" id="Yu1-PE-Pmj"/>
